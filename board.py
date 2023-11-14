@@ -1,22 +1,8 @@
-# In this file we do the game board for snakes and ladders
+# In this file we program the initi sequence for the board
 
 # Imports
-import pygame
 import square
 
-# Init pygame as the very first action 
-pygame.init()
-
-# Constants 
-CANVAS_X = 960
-CANVAS_Y = 720
-
-# Colors
-ORANGE  = ( 255, 140, 0)
-RED  = ( 255, 0, 0)
-GREEN   = ( 0, 255, 0)
-BLACK = ( 0, 0, 0)
-WHITE  = ( 255, 255, 255)
 
 class Board: 
     def __init__(self): 
@@ -31,13 +17,13 @@ class Board:
             iter_cnt = 0
             if row_cnt % 2 == 0: 
                 for _ in range(self.side_len):
-                    row.append(square.Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt, BLACK))
+                    row.append(square.Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt, (255, 0, 0)))
                     iter_cnt += 1
                 
             elif row_cnt % 2 == 1: 
                 iter_cnt_rev = self.side_len - 1
                 for _ in range(self.side_len):
-                    row.append(square.Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev, RED))
+                    row.append(square.Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev, (0, 255, 0)))
                     iter_cnt_rev -= 1
                 
             row_cnt += 1
@@ -51,10 +37,9 @@ class Board:
             result += '\n'
         return result
         
-
+# Instantiate the board object you'll be working with 
 B = Board()
 print(B)
-    
 
 
         
