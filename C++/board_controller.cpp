@@ -12,9 +12,9 @@ public:
             }
         );
     }
+    std_msgs::msg::Int32 game_state_msg;
 
     void handlePlayerMove(int roll) {
-        std_msgs::msg::Int32 game_state_msg;
 
         if (position < 49) {
             game_state_msg.dice_result = rollDice();
@@ -51,16 +51,44 @@ private:
                                         0, -6, 0, 0, 0, 0, 0
         };
 
-        int newPosition = position + snakesAndLadders[position];
-        if (newPosition != position) {
-            if (snakesAndLadders[position] > 0) {
-                RCLCPP_INFO(this->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
-            } else {
+        int newPosition = position + roll;
+
+        while (true) {
+            if (snakesAndLadders[position] > 0) {    
+                RCLCPP_INFO(this->get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");
+
+                char choice;
+                std::cin >> choice;
+
+                if (choice == 'y' || choice == 'Y') {
+                    newPosition = newPosition + snakesAndLadders[position];
+                    RCLCPP_INFO(this->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+                    break;
+
+                } else {
+                    game_state_msg.dice_result = rollDice();
+                    newPosition = newPosition + game_state_msg.dice_result;
+                    RCLCPP_INFO(this->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+                }
+
+               
+            } else if (snakesAndLadders[position] < 0) {
+
+                newPosition = newPosition + snakesAndLadders[position];
                 RCLCPP_INFO(this->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+                break;
+
+            } else {
+
+                RCLCPP_INFO(this->get_logger(), "Normal square! You're now at position %d", newPosition);
+                break;
+
             }
+
             position = newPosition;
             game_state_msg.player_position = position;
         }
+
     }
 };
 

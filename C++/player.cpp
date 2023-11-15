@@ -1,5 +1,6 @@
 #include "player.hpp"
 #include "board_controller.hpp"
+#include "game_state_msg.msg"
 
 class PlayerNode : public rclcpp::Node {
 public:
@@ -7,8 +8,10 @@ public:
         player_move_publisher_ = this->create_publisher<std_msgs::msg::Int32>("player_move", 10);
         game_state_subscription_ = this->create_subscription<std_msgs::msg::Int32>("game_state", 10,
             [this](const std_msgs::msg::Int32::SharedPtr msg) {
-                if (msg->data > 0) {
-                    handlePlayerMove(msg->data);
+                
+	    if (msg->data > 0) {
+
+		handlePlayerMove(game_state_msg.dice_result);
 
                     std_msgs::msg::Int32 player_move_msg;
                     player_move_msg.data = position;
