@@ -3,6 +3,15 @@
 # Imports
 import square
 
+# Adding this template to match Fatmiah's example, will cange it later
+board_reference = [[0,0,0,0,1,0,0],
+                   [0,0,0,0,0,0,0],
+                   [0,-1,0,0,0,0,0],
+                   [0,0,0,0,0,-1,0],
+                   [0,0,0,1,0,0,0],
+                   [0,0,0,0,0,1,0],
+                   [0,-1,0,0,0,0,0]]
+
 
 class Board: 
     def __init__(self): 
@@ -16,17 +25,35 @@ class Board:
         for row in self.squares_list: 
             iter_cnt = 0
             if row_cnt % 2 == 0: 
-                for _ in range(self.side_len):
-                    row.append(square.Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt, (255, 0, 0)))
+                for i in range(0, self.side_len):
+                    # These lines of code provide the matching to Fatimah's template
+                    if board_reference[row_cnt][i] < 0:
+                        row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
+                    
+                    elif board_reference[row_cnt][i] > 0: 
+                        row.append(square.Ladder_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))                       
+
+                    else: 
+                        row.append(square.Normal_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
+
                     iter_cnt += 1
                 
             elif row_cnt % 2 == 1: 
                 iter_cnt_rev = self.side_len - 1
-                for _ in range(self.side_len):
-                    row.append(square.Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev, (0, 255, 0)))
+                for j in range(self.side_len):
+                    if board_reference[row_cnt][j] == 0:
+                        row.append(square.Normal_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+
+                    elif board_reference[row_cnt][j] > 0: 
+                        row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+
+                    else: 
+                        row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+
                     iter_cnt_rev -= 1
                 
             row_cnt += 1
+        
     
     def __repr__(self):
         result : str = ''

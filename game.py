@@ -1,7 +1,6 @@
 '''
     TODO:
     - implement prompts
-    - draw players 
     - draw ladders and snakes 
     - impplement special events, of which there are two: 
         + timeout event 
@@ -9,8 +8,9 @@
     - dice mechanism
 
 '''
-
+import colors
 import board 
+import players
 import pygame
 
 # Everything inherent to the working plane
@@ -21,36 +21,22 @@ screen = pygame.display.set_mode((CANVAS_X, CANVAS_Y), pygame.RESIZABLE)
 # Variables 
 game_in_progress = True 
 
+# Template measurements
 tile_size = screen.get_height() / 10
 border_distance_x : int = (screen.get_width() / 2) - (tile_size * board.B.side_len / 2)
 border_distance_y : int = screen.get_height() / 30
 
 
-# Colors
-# Basic, you never know
-ORANGE  = ( 255, 140, 0)
-RED  = ( 255, 0, 0)
-GREEN   = ( 0, 255, 0)
-BLACK = ( 0, 0, 0)
-WHITE  = ( 255, 255, 255)
-
-# A better selection 
-BG_COLOR = (40, 41, 38)
-INDIGO = (133, 148, 237)
-PINKISH = (242, 114, 150)
-YELLOWISH = (233, 237, 171)
-
-
 # Functions
-def init_game(): 
+def init_game() -> None: 
     pygame.init()
     clock = pygame.time.Clock()
     clock.tick(60)
     pygame.display.set_caption("Pimp'd up snakes & ladders")
 
 
-def draw_board(): 
-    screen.fill(BG_COLOR)
+def draw_board() -> None: 
+    screen.fill(colors.BG_COLOR)
 
     # Here we take the list we compiled in board.py and draw the single tiles 
     # with a number in the middle for each element
@@ -59,16 +45,15 @@ def draw_board():
     tile_color = tuple()
 
     for row in board.B.squares_list: 
-        for square in row: 
-            if square.index % 2 == 0: tile_color = INDIGO
-            elif square.index == 1 or square.index == board.B.side_len**2: tile_color = YELLOWISH
-            else: tile_color = PINKISH
-
+        for element in row:          
+            if element.index == 1 or element.index == board.B.side_len**2: tile_color = colors.YELLOWISH
+            else: tile_color = element.color      
+            
             tile = pygame.Rect(border_distance_x + offset_x, border_distance_y + offset_y, tile_size, tile_size)
-            text_surface_object = pygame.font.SysFont('Arial', 25).render(str(square.index), True, BLACK)
+            text_surface_object = pygame.font.SysFont('Arial', 25).render(str(element.index), True, colors.BLACK)
             text_rect = text_surface_object.get_rect(center=tile.center)
             pygame.draw.rect(screen, tile_color, tile)
-            pygame.draw.rect(screen, WHITE, tile, 2, border_radius=1)
+            pygame.draw.rect(screen, colors.WHITE, tile, 2, border_radius=1)
             screen.blit(text_surface_object, text_rect)
             offset_x += tile_size
 
@@ -76,13 +61,42 @@ def draw_board():
         offset_y += tile_size
     
     msg_prompt = pygame.Rect(border_distance_x - tile_size, border_distance_y + offset_y, tile_size * (board.B.side_len + 2), tile_size * 1.5)
-    pygame.draw.rect(screen, BG_COLOR, msg_prompt)
-    pygame.draw.rect(screen, WHITE, msg_prompt, 2, border_radius=1)
-
-    pygame.display.update()
+    pygame.draw.rect(screen, colors.BG_COLOR, msg_prompt)
+    pygame.draw.rect(screen, colors.WHITE, msg_prompt, 2, border_radius=1)
 
 
+# Player functions 
+def from_index_to_coords(index : int) -> tuple: 
+    # Okay so here we calculate the different coordinates based on the index
+    offset_from_goal = tuple()
+    x : int = 0
+    y : int = 0
 
+    starting_coordinates = (border_distance_x + tile_size/2, border_distance_y + tile_size/2)
+    
+    # In [0] we save how many times the number can be divided by the length of the board, in 
+    # [1] we save how much remains
+    offset_from_goal = divmod(index - 1, board.B.side_len)
+
+    # y-coordinate  
+    y = starting_coordinates[1] + ((board.B.side_len - offset_from_goal[0] - 1) * tile_size)    
+
+    # x_coordinate
+    if offset_from_goal[0] % 2 != 0: 
+        x = starting_coordinates[0] + ((offset_from_goal[1]) * tile_size)
+    else: 
+        x= starting_coordinates[0] + ((board.B.side_len - offset_from_goal[1] - 1) * tile_size)
+
+
+    return (x, y)
+    
+
+def draw_player(player) -> pygame.Rect:
+    coords = from_index_to_coords(player.position)
+    pygame.draw.circle(screen, player.color, (coords[0], coords[1] + player.y_offset), player.radius)
+
+
+# Drawing the game 
 if __name__ == '__main__':
     init_game()
 
@@ -105,8 +119,10 @@ if __name__ == '__main__':
                 if event.key == pygame.K_ESCAPE:
                     game_in_progress = False
 
-        
+        # Render the board 
         draw_board()
-        pygame.display.flip()
+        draw_player(players.P1)
+        draw_player(players.P2)
+        pygame.display.update()
 
     pygame.quit()
