@@ -41,14 +41,14 @@ class Board:
             elif row_cnt % 2 == 1: 
                 iter_cnt_rev = self.side_len - 1
                 for j in range(self.side_len):
-                    if board_reference[row_cnt][j] == 0:
-                        row.append(square.Normal_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+                    if board_reference[row_cnt][j] < 0:
+                        row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
 
                     elif board_reference[row_cnt][j] > 0: 
                         row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
 
                     else: 
-                        row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+                        row.append(square.Normal_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
 
                     iter_cnt_rev -= 1
                 

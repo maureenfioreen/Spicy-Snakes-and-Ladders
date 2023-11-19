@@ -5,7 +5,7 @@
     - implement special events, of which there are two: 
         + timeout event 
         + wait-one-turn event
-    - dice mechanism
+    - dice mechanism **
 
 '''
 import colors
@@ -14,6 +14,8 @@ import pygame
 import mr305
 from players import P1, P2
 from time import sleep 
+from dice import render_dice
+from random import randint
 
 
 # Functions
@@ -63,7 +65,7 @@ def move_player(player, new_position):
     
     player.draw_player()
     draw_board()
-    sleep(0.3)
+    sleep(0.1)
 
 def render():  
     # Here the program iterates through a list of various events in order to react to them
@@ -94,6 +96,7 @@ def render():
 # Drawing the game 
 if __name__ == '__main__':
     init_game()
+    dice_roll_test = randint(1, 6)
     while mr305.game_in_progress: 
         render()
         move_player(P1, 24)
