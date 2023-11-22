@@ -56,17 +56,6 @@ def draw_board() -> None:
     pygame.draw.rect(mr305.screen, colors.WHITE, msg_prompt, 2, border_radius=1)
 
 
-def move_player(player, new_position): 
-    if player.position < new_position: 
-        player.position += 1
-
-    elif player.position > new_position: 
-        player.position -= 1
-    
-    player.draw_player()
-    draw_board()
-    sleep(0.1)
-
 def render():  
     # Here the program iterates through a list of various events in order to react to them
     for event in pygame.event.get(): 
@@ -88,19 +77,43 @@ def render():
 
     # Render the board 
     draw_board()
+    render_dice(mr305.dice_player_1_coords, 6)
     P1.draw_player()
     P2.draw_player()
     pygame.display.update()
 
 
+def move_player_by_single_square(player, new_position): 
+    if player.position < new_position: player.position += 1
+
+    elif player.position > new_position: player.position -= 1
+    
+    sleep(0.15)
+
+
+def move_player_to_position(player, final_position): 
+    player.is_moving = True
+
+    while player.is_moving: 
+        move_player_by_single_square(player, final_position)
+        player.draw_player()
+        render()
+    
+        if player.position == final_position:
+            player.is_moving = False
+            player.display_msg()
+            sleep(2)
+
+    render()
+
+
 # Drawing the game 
 if __name__ == '__main__':
     init_game()
-    dice_roll_test = randint(1, 6)
+    render()
     while mr305.game_in_progress: 
-        render()
-        move_player(P1, 24)
-        move_player(P2, 15)
+        move_player_to_position(P1, 6)
+        move_player_to_position(P2, 15)
     
         
     pygame.quit()
