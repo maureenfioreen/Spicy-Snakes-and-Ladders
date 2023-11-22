@@ -63,6 +63,7 @@ class Board:
                 result += str(element.index) + '| '
             result += '\n'
         return result
+
         
 # Instantiate the board object you'll be working with 
 B = Board()
