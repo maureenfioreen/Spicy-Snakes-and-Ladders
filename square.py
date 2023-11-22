@@ -3,10 +3,13 @@ import colors
 class Square: 
     def __init__(self, index : int): 
         self.index = index
-        self.message = 'This is the superclass'
+        self.message = ''
 
     def __repr__(self): 
-        return self.index
+        return type(self)
+    
+    def action(self):
+        pass
 
 
 class Normal_Square(Square): 
