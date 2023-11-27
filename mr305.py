@@ -1,4 +1,4 @@
-from pygame import display, Rect, RESIZABLE
+from pygame import display, RESIZABLE
 from board import B
 
 # haha get it since it's full of globally used stuff
@@ -12,7 +12,6 @@ CANVAS_Y = 720
 # Variables 
 game_in_progress = True 
 screen = display.set_mode((CANVAS_X, CANVAS_Y), RESIZABLE)
-global msg_prompt 
 
 # Template measurements
 tile_size = screen.get_height() / 10

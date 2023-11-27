@@ -8,7 +8,7 @@ class Square:
     def __repr__(self): 
         return type(self)
     
-    def action(self):
+    def perform_action(self):
         pass
 
 
@@ -28,6 +28,12 @@ class Ladder_Square(Square):
         self.increment = 4
         self.message = f'You might advance {self.increment} squares for free, as a treat :3'
         self.color = colors.LADDER_SQUARE_COL
+
+    def perform_action(self, player):
+        pass 
+
+    # Need to move the player, but the method for moving the player is in the game.py module 
+    # --> CAN I SHIFT IT TO players.py
     
 
 class Snake_Square(Square): 
