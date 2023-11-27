@@ -3,7 +3,7 @@ from mr305 import tile_size, border_distance_x, border_distance_y, screen
 from board import B
 
 from pygame import draw, font
-from pygame.display import update
+from time import sleep 
 
 
 class Player():
@@ -25,6 +25,7 @@ class Player():
     def __repr__(self):
         return self.id
     
+
     def get_row_and_col_index(self, index):
         row : int = 0
         col : int = 0
@@ -49,9 +50,6 @@ class Player():
         y : int = 0
 
         starting_coordinates = (border_distance_x + tile_size/2, border_distance_y + tile_size/2)
-        
-        # In [0] we save how many times the number can be divided by the length of the board, in 
-        # [1] we save how much remains
         offset_from_goal = self.get_row_and_col_index(self.position)
 
         # y-coordinate  
@@ -68,25 +66,38 @@ class Player():
         draw.circle(screen, self.border_color, (coords[0], coords[1] + self.y_offset), self.radius + 1, self.width)
         draw.circle(screen, self.color, (coords[0], coords[1] + self.y_offset), self.radius)
 
+
+# Movement
+    def move_player_by_single_square(self, new_position): 
+        if self.position < new_position: self.position += 1
+        elif self.position > new_position: self.position -= 1
+        
+        sleep(0.15)
+
+
+    def move_player_to_position(self, final_position): 
+        self.is_moving = True
+
+        while self.is_moving: 
+            self.move_player_by_single_square(final_position)
+            self.draw_player()
+            
+            if self.position == final_position:
+                self.is_moving = False
+                self.display_msg()
+                self.draw_player()
+                sleep(2)
+        
+        
 # Text functions
-    def adapt_message(self, message): 
-        pass 
-
-
     def display_msg(self): 
         # ok so in this function i want the player to display a message on the prompt depending from its position on the board
         row, col = self.get_row_and_col_index(self.position)
         message = B.squares_list[col][row].message
 
-        text_font =  font.Font('freesansbold.ttf', 15)
+        text_font =  font.Font(None, 24)
         text = text_font.render(message, True, colors.WHITE)
         text_rect = text.get_rect()
         text_rect.topleft = (border_distance_x - tile_size + 10, border_distance_y + 10 + B.side_len * tile_size)
         screen.blit(text, text_rect)
-        
-        update()
-
-       
-
-P1 = Player('Player_1', colors.PLAYER_1_COL, -20)  
-P2 = Player('Player_2', colors.PLAYER_2_COL, 20)  
+    

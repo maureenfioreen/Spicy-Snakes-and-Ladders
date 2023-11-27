@@ -2,6 +2,9 @@
 
 # Imports
 import square
+import mr305
+from colors import BG_COLOR, WHITE, BLACK, YELLOWISH
+from pygame import Rect, font, draw
 
 # Adding this template to match Fatmiah's example, will cange it later
 board_reference = [[0,0,0,0,1,0,0],
@@ -67,7 +70,31 @@ class Board:
         
 # Instantiate the board object you'll be working with 
 B = Board()
-print(B)
+
+def draw_board() -> None: 
+    mr305.screen.fill(BG_COLOR)
+
+    # Here we take the list we compiled in board.py and draw the single tiles 
+    # with a number in the middle for each element
+    offset_x = 0
+    offset_y = 0
+    tile_color = tuple()
+
+    for row in B.squares_list: 
+        for element in row:          
+            if element.index == 1 or element.index == B.side_len**2: tile_color = YELLOWISH
+            else: tile_color = element.color      
+            
+            tile = Rect(mr305.border_distance_x + offset_x, mr305.border_distance_y + offset_y, mr305.tile_size, mr305.tile_size)
+            text_surface_object = font.SysFont('Arial', 25).render(str(element.index), True, BLACK)
+            text_rect = text_surface_object.get_rect(center=tile.center)
+            draw.rect(mr305.screen, tile_color, tile)
+            draw.rect(mr305.screen, WHITE, tile, 2, border_radius=1)
+            mr305.screen.blit(text_surface_object, text_rect)
+            offset_x += mr305.tile_size
+
+        offset_x = 0
+        offset_y += mr305.tile_size 
 
 
         
