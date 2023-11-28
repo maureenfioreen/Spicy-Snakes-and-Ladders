@@ -1,0 +1,53 @@
+cmake_minimum_required(VERSION 3.8)
+project(game)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+
+
+set(msg_files "msg/GameStateMsg.msg")
+
+rosidl_generate_interfaces(${PROJECT_NAME} ${msg_files})
+
+add_executable(snakes_and_ladders_game src/board_controller.cpp)
+ament_target_dependencies(snakes_and_ladders_game rclcpp std_msgs)
+
+add_executable(player_node src/player.cpp)
+ament_target_dependencies(player_node rclcpp std_msgs)
+
+# uncomment the following section in order to fill in
+# further dependencies manually.
+ament_export_dependencies(rclcpp std_msgs)
+ament_export_dependencies(rosidl_default_runtime)
+
+rosidl_target_interfaces(snakes_and_ladders_game
+	${PROJECT_NAME} "rosidl_typesupport_cpp")
+
+# find_package(<dependency> REQUIRED)
+
+install (TARGETS 
+	snakes_and_ladders_game
+	player_node
+	DESTINATION ${PROJECT_NAME})
+
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_package()

@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_generator_c[0m
+[  2%] Built target game__cpp
+[ 11%] Built target game__rosidl_generator_c
+[ 14%] [32mBuilding CXX object CMakeFiles/player_node.dir/src/player.cpp.o[0m
+[ 14%] Built target ament_cmake_python_copy_game
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_cpp[0m
+[ 22%] Built target game__rosidl_typesupport_cpp
+[ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+In file included from [01m[K/home/g209/ros2_ws/src/game/src/player.cpp:1[m[K:
+[01m[K/home/g209/ros2_ws/src/game/src/player.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Int32.hpp: Datei oder Verzeichnis nicht gefunden
+    5 | #include [01;31m[K<std_msgs/msg/Int32.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/player_node.dir/build.make:76: CMakeFiles/player_node.dir/src/player.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/player_node.dir/all] Fehler 2
+gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+[ 28%] [32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/game/msg/detail/game_state_msg__type_support_c.cpp.o[0m
+[ 31%] [32m[1mLinking CXX shared library libgame__rosidl_typesupport_fastrtps_c.so[0m
+[ 31%] Built target game__rosidl_typesupport_fastrtps_c
+gmake: *** [Makefile:146: all] Fehler 2

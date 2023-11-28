@@ -1,0 +1,129 @@
+[0.000000] (-) TimerEvent: {}
+[0.002200] (game) JobQueued: {'identifier': 'game', 'dependencies': OrderedDict()}
+[0.002279] (game) JobStarted: {'identifier': 'game'}
+[0.053424] (game) JobProgress: {'identifier': 'game', 'progress': 'cmake'}
+[0.053943] (game) Command: {'cmd': ['/usr/bin/cmake', '/home/g209/ros2_ws/src/game', '-DCMAKE_INSTALL_PREFIX=/home/g209/ros2_ws/src/game/install/game'], 'cwd': '/home/g209/ros2_ws/src/game/build/game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'g209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/g209'), ('OLDPWD', '/home/g209/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1651'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'g209'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'g209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu4ROS2:@/tmp/.ICE-unix/1628,unix/Ubuntu4ROS2:/tmp/.ICE-unix/1628'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d016c84d_4d0a_4604_aef0_0aa6a54eee93'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'de_DE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.UB84E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/g209/ros2_ws/src/game/build/game'), ('LC_ALL', 'de_DE.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100050] (-) TimerEvent: {}
+[0.200571] (-) TimerEvent: {}
+[0.299182] (game) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.301351] (-) TimerEvent: {}
+[0.401773] (-) TimerEvent: {}
+[0.450846] (game) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.469904] (game) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501925] (-) TimerEvent: {}
+[0.570008] (game) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.574774] (game) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.575969] (game) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.577167] (game) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.581782] (game) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.602061] (-) TimerEvent: {}
+[0.667754] (game) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.671155] (game) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.671746] (game) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.672301] (game) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.682691] (game) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.702385] (-) TimerEvent: {}
+[0.804621] (-) TimerEvent: {}
+[0.828641] (game) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.905873] (-) TimerEvent: {}
+[0.965092] (game) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.972318] (game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.982475] (game) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.006465] (-) TimerEvent: {}
+[1.059576] (game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.108193] (-) TimerEvent: {}
+[1.124308] (game) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.208522] (-) TimerEvent: {}
+[1.260082] (game) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.266499] (game) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.308761] (-) TimerEvent: {}
+[1.404176] (game) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.409243] (-) TimerEvent: {}
+[1.425807] (game) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.474360] (game) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.492307] (game) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.509505] (-) TimerEvent: {}
+[1.594974] (game) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.595228] (game) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.609573] (-) TimerEvent: {}
+[1.678001] (game) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.680229] (game) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.710618] (-) TimerEvent: {}
+[1.816531] (-) TimerEvent: {}
+[1.919719] (-) TimerEvent: {}
+[2.020620] (-) TimerEvent: {}
+[2.042465] (game) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.120701] (-) TimerEvent: {}
+[2.213005] (game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.220826] (-) TimerEvent: {}
+[2.321793] (-) TimerEvent: {}
+[2.415280] (game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.422365] (-) TimerEvent: {}
+[2.433826] (game) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.436805] (game) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.472903] (game) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.473088] (game) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.473129] (game) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.473160] (game) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.490222] (game) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.518792] (game) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[2.518968] (game) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[2.519012] (game) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[2.519043] (game) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.519072] (game) StderrLine: {'line': b'  CMakeLists.txt:35 (rosidl_target_interfaces)\n'}
+[2.519100] (game) StderrLine: {'line': b'\n'}
+[2.519129] (game) StderrLine: {'line': b'\x1b[0m\n'}
+[2.520926] (game) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.522886] (-) TimerEvent: {}
+[2.566419] (game) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.567229] (game) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/g209/ros2_ws/src/game/build/game/rosidl_generator_c>;$<BUILD_INTERFACE:/home/g209/ros2_ws/src/game/build/game/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/g209/ros2_ws/src/game/build/game/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/g209/ros2_ws/src/game/build/game/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/g209/ros2_ws/src/game/build/game/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/g209/ros2_ws/src/game/build/game/rosidl_typesupport_introspection_cpp>;/home/g209/ros2_ws/src/game/build/game/rosidl_generator_c;/home/g209/ros2_ws/src/game/build/game/rosidl_generator_py\n'}
+[2.567362] (game) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.569118] (game) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.570918] (game) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.572309] (game) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.576727] (game) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.576955] (game) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.578760] (game) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.582398] (game) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.607589] (game) StdoutLine: {'line': b'-- Generating done\n'}
+[2.609936] (game) StdoutLine: {'line': b'-- Build files have been written to: /home/g209/ros2_ws/src/game/build/game\n'}
+[2.618502] (game) CommandEnded: {'returncode': 0}
+[2.620823] (game) JobProgress: {'identifier': 'game', 'progress': 'build'}
+[2.620863] (game) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/g209/ros2_ws/src/game/build/game', '--', '-j2', '-l2'], 'cwd': '/home/g209/ros2_ws/src/game/build/game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'g209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/g209'), ('OLDPWD', '/home/g209/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1651'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'g209'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'g209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu4ROS2:@/tmp/.ICE-unix/1628,unix/Ubuntu4ROS2:/tmp/.ICE-unix/1628'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d016c84d_4d0a_4604_aef0_0aa6a54eee93'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'de_DE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.UB84E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/g209/ros2_ws/src/game/build/game'), ('LC_ALL', 'de_DE.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.623961] (-) TimerEvent: {}
+[2.668609] (game) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.681041] (game) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.727774] (-) TimerEvent: {}
+[2.828273] (-) TimerEvent: {}
+[2.902792] (game) StdoutLine: {'line': b'[  5%] Built target game__cpp\n'}
+[2.928989] (-) TimerEvent: {}
+[2.933741] (game) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/game__rosidl_generator_c.dir/rosidl_generator_c/game/msg/detail/game_state_msg__functions.c.o\x1b[0m\n'}
+[2.939219] (game) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_copy_game\n'}
+[2.982364] (game) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/player_node.dir/src/player.cpp.o\x1b[0m\n'}
+[3.022430] (game) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libgame__rosidl_generator_c.so\x1b[0m\n'}
+[3.029118] (-) TimerEvent: {}
+[3.080509] (game) StdoutLine: {'line': b'[ 14%] Built target game__rosidl_generator_c\n'}
+[3.105983] (game) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.129430] (-) TimerEvent: {}
+[3.229985] (-) TimerEvent: {}
+[3.264544] (game) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/game/msg/game_state_msg__type_support.cpp.o\x1b[0m\n'}
+[3.330388] (-) TimerEvent: {}
+[3.430892] (-) TimerEvent: {}
+[3.532522] (-) TimerEvent: {}
+[3.632942] (-) TimerEvent: {}
+[3.640497] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/player.cpp:1\x1b[m\x1b[K:\n'}
+[3.640662] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/player.hpp:5:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kstd_msgs/msg/Int32.hpp: Datei oder Verzeichnis nicht gefunden\n'}
+[3.640733] (game) StderrLine: {'line': b'    5 | #include \x1b[01;31m\x1b[K<std_msgs/msg/Int32.hpp>\x1b[m\x1b[K\n'}
+[3.640795] (game) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.640905] (game) StderrLine: {'line': b'compilation terminated.\n'}
+[3.643527] (game) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/player_node.dir/build.make:76: CMakeFiles/player_node.dir/src/player.cpp.o] Fehler 1\n'}
+[3.643679] (game) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/player_node.dir/all] Fehler 2\n'}
+[3.643721] (game) StderrLine: {'line': b'gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet \xe2\x80\xa6\n'}
+[3.696247] (game) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX shared library libgame__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.731737] (game) StdoutLine: {'line': b'[ 22%] Built target game__rosidl_typesupport_cpp\n'}
+[3.732903] (game) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Fehler 2\n'}
+[3.732993] (-) TimerEvent: {}
+[3.734573] (game) CommandEnded: {'returncode': 2}
+[3.833241] (-) TimerEvent: {}
+[3.909962] (game) JobEnded: {'identifier': 'game', 'rc': 2}
+[3.910931] (-) EventReactorShutdown: {}

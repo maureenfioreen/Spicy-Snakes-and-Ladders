@@ -1,0 +1,9 @@
+In file included from [01m[K/home/g209/ros2_ws/src/game/src/player.cpp:1[m[K:
+[01m[K/home/g209/ros2_ws/src/game/src/player.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Int32.hpp: Datei oder Verzeichnis nicht gefunden
+    5 | #include [01;31m[K<std_msgs/msg/Int32.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/player_node.dir/build.make:76: CMakeFiles/player_node.dir/src/player.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/player_node.dir/all] Fehler 2
+gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+gmake: *** [Makefile:146: all] Fehler 2

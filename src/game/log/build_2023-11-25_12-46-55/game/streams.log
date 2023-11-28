@@ -1,0 +1,22 @@
+[0.071s] Invoking command in '/home/g209/ros2_ws/src/game/build/game': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g209/ros2_ws/src/game/build/game -- -j2 -l2
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_generator_c[0m
+[0.139s] [  2%] Built target game__cpp
+[0.144s] [ 11%] Built target game__rosidl_generator_c
+[0.168s] [ 14%] [32mBuilding CXX object CMakeFiles/player_node.dir/src/player.cpp.o[0m
+[0.168s] [ 14%] Built target ament_cmake_python_copy_game
+[0.187s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_cpp[0m
+[0.199s] [ 22%] Built target game__rosidl_typesupport_cpp
+[0.209s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.300s] In file included from [01m[K/home/g209/ros2_ws/src/game/src/player.cpp:1[m[K:
+[0.300s] [01m[K/home/g209/ros2_ws/src/game/src/player.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Int32.hpp: Datei oder Verzeichnis nicht gefunden
+[0.300s]     5 | #include [01;31m[K<std_msgs/msg/Int32.hpp>[m[K
+[0.300s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.300s] compilation terminated.
+[0.304s] gmake[2]: *** [CMakeFiles/player_node.dir/build.make:76: CMakeFiles/player_node.dir/src/player.cpp.o] Fehler 1
+[0.304s] gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/player_node.dir/all] Fehler 2
+[0.304s] gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+[0.400s] [ 28%] [32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/game/msg/detail/game_state_msg__type_support_c.cpp.o[0m
+[0.644s] [ 31%] [32m[1mLinking CXX shared library libgame__rosidl_typesupport_fastrtps_c.so[0m
+[0.712s] [ 31%] Built target game__rosidl_typesupport_fastrtps_c
+[0.713s] gmake: *** [Makefile:146: all] Fehler 2
+[0.715s] Invoked command in '/home/g209/ros2_ws/src/game/build/game' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g209/ros2_ws/src/game/build/game -- -j2 -l2

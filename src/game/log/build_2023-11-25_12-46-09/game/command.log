@@ -1,0 +1,4 @@
+Invoking command in '/home/g209/ros2_ws/src/game/build/game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/g209/ros2_ws/src/game -DCMAKE_INSTALL_PREFIX=/home/g209/ros2_ws/src/game/install/game
+Invoked command in '/home/g209/ros2_ws/src/game/build/game' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/g209/ros2_ws/src/game -DCMAKE_INSTALL_PREFIX=/home/g209/ros2_ws/src/game/install/game
+Invoking command in '/home/g209/ros2_ws/src/game/build/game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/g209/ros2_ws/src/game/build/game -- -j2 -l2
+Invoked command in '/home/g209/ros2_ws/src/game/build/game' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/g209/ros2_ws/src/game/build/game -- -j2 -l2
