@@ -1,13 +1,14 @@
 import colors
-from mr305 import tile_size, border_distance_x, border_distance_y, screen
+from mr305 import tile_size, border_distance_x, border_distance_y, screen, side_length
 from board import B
+from dice import render_dice
 
-from pygame import draw, font
+from pygame import draw
 from time import sleep 
 
 
 class Player():
-    def __init__(self, id : str, color : tuple,  y_offset : int, position : int = 1):
+    def __init__(self, id : str, color : tuple,  y_offset : int, dice_render_coords : tuple, position : int = 1):
         self.id = id
 
         # For the drawing part
@@ -21,6 +22,8 @@ class Player():
         # In order to check if tha plyer is moving 
         self.is_moving = False
 
+        # This is in order to render the dice dynamically
+        self.dice_render_coords = dice_render_coords
     
     def __repr__(self):
         return self.id
@@ -30,14 +33,14 @@ class Player():
         row : int = 0
         col : int = 0
 
-        temp = divmod(index - 1, B.side_len)
+        temp = divmod(index - 1, side_length)
         
-        col = B.side_len - temp[0] - 1
+        col = side_length - temp[0] - 1
 
         if temp[0] % 2 != 0: 
             row = temp[1]
         else: 
-            row = B.side_len - temp[1] -1
+            row = side_length - temp[1] -1
         
         return (row, col)
 
@@ -68,36 +71,35 @@ class Player():
 
 
 # Movement
-    def move_player_by_single_square(self, new_position): 
-        if self.position < new_position: self.position += 1
-        elif self.position > new_position: self.position -= 1
-        
+    def move_player_by_single_square(self, new_position):
+        if self.position < new_position: 
+            self.position += 1
+
+        elif self.position > new_position: 
+            self.position -= 1
+
+        else:
+            pass
+
         sleep(0.15)
 
 
-    def move_player_to_position(self, final_position): 
+    def move_player_to_position(self, increment): 
         self.is_moving = True
+        final_position = increment + self.position
+        f_row, f_col = self.get_row_and_col_index(final_position)
+
 
         while self.is_moving: 
             self.move_player_by_single_square(final_position)
-            self.draw_player()
             
-            if self.position == final_position:
+            if self.position == final_position or self.position == 1 or self.position == side_length**2:
                 self.is_moving = False
-                self.display_msg()
-                self.draw_player()
+                
                 sleep(2)
+                return B.squares_list[f_col][f_row].perform_action(self)
+            
+            self.draw_player()
+            render_dice(self.dice_render_coords, increment)
         
-        
-# Text functions
-    def display_msg(self): 
-        # ok so in this function i want the player to display a message on the prompt depending from its position on the board
-        row, col = self.get_row_and_col_index(self.position)
-        message = B.squares_list[col][row].message
-
-        text_font =  font.Font(None, 24)
-        text = text_font.render(message, True, colors.WHITE)
-        text_rect = text.get_rect()
-        text_rect.topleft = (border_distance_x - tile_size + 10, border_distance_y + 10 + B.side_len * tile_size)
-        screen.blit(text, text_rect)
     
