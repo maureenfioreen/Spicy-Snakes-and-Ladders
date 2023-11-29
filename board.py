@@ -7,18 +7,18 @@ from colors import BG_COLOR, WHITE, BLACK, YELLOWISH
 from pygame import Rect, font, draw
 
 # Adding this template to match Fatmiah's example, will cange it later
-board_reference = [[0,0,0,0,1,0,0],
-                   [0,0,0,0,0,0,0],
+board_reference = [[5,-1,0,0,1,0,0],
+                   [0,0,0,0,0,2,0],
                    [0,-1,0,0,0,0,0],
+                   [0,0,2,0,0,-1,0],
+                   [0,0,1,0,0,0,0],
                    [0,0,0,0,0,-1,0],
-                   [0,0,0,1,0,0,0],
-                   [0,0,0,0,0,1,0],
                    [0,-1,0,0,0,0,0]]
 
 
 class Board: 
     def __init__(self): 
-        self.side_len : int = 7
+        self.side_len : int = mr305.side_length
         self.squares_list =  [[] for _ in range(self.side_len)]      
 
         # Time to add the squares to the board
@@ -29,32 +29,54 @@ class Board:
             iter_cnt = 0
             if row_cnt % 2 == 0: 
                 for i in range(0, self.side_len):
-                    # These lines of code provide the matching to Fatimah's template
-                    if board_reference[row_cnt][i] < 0:
-                        row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
-                    
-                    elif board_reference[row_cnt][i] > 0: 
-                        row.append(square.Ladder_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))                       
 
-                    else: 
-                        row.append(square.Normal_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
+                    match board_reference[row_cnt][i]: 
+                        case -1: 
+                            row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
+                        
+                        case 0: 
+                            row.append(square.Normal_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
+
+                        case 1: 
+                            row.append(square.Ladder_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
+
+                        case 2: 
+                            row.append(square.Gambling_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
+
+                        case 5: 
+                            row.append(square.Winning_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt))
+
+                        case default: 
+                            raise Exception("SOMETHING WENT WRONG WHILE INITIALIZING THE BOARD!!!")
 
                     iter_cnt += 1
                 
+
             elif row_cnt % 2 == 1: 
                 iter_cnt_rev = self.side_len - 1
                 for j in range(self.side_len):
-                    if board_reference[row_cnt][j] < 0:
-                        row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+                    match board_reference[row_cnt][j]: 
+                        case -1: 
+                            row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+                        
+                        case 0: 
+                            row.append(square.Normal_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
 
-                    elif board_reference[row_cnt][j] > 0: 
-                        row.append(square.Snake_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+                        case 1: 
+                            row.append(square.Ladder_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
 
-                    else: 
-                        row.append(square.Normal_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+                        case 2: 
+                            row.append(square.Gambling_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+
+                        case 5: 
+                            row.append(square.Winning_Square((self.side_len**2) - (row_cnt * self.side_len) - iter_cnt_rev))
+
+                        case default: 
+                            raise Exception("SOMETHING WENT WRONG WHILE INITIALIZING THE BOARD!!!")
 
                     iter_cnt_rev -= 1
                 
+
             row_cnt += 1
         
     
