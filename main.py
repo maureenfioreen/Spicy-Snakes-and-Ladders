@@ -3,13 +3,23 @@ import pygame
 import mr305
 import threading
 
+from random import randint
+
 from players import Player
 from board import draw_board
 from dice import render_dice
+from messages import draw_message_prompt
 
+'''
+Problems: 
+    - Tiles don't seem to be where they are supposed to be 
+    - Messages don't get printed long enough
+    - Still no game package to exchange messages!!!
+'''
 
-P1 = Player('Player_1', colors.PLAYER_1_COL, -20)  
-P2 = Player('Player_2', colors.PLAYER_2_COL, 20)  
+P1 = Player('Player_1', colors.PLAYER_1_COL, -20, mr305.dice_player_1_coords)  
+P2 = Player('Player_2', colors.PLAYER_2_COL, 20, mr305.dice_player_2_coords)  
+
 
 def init_game() -> None: 
     pygame.init()
@@ -40,24 +50,27 @@ def render():
 
 
         draw_board()
+        draw_message_prompt()
         P1.draw_player()
         P2.draw_player()
-        render_dice(mr305.dice_player_2_coords, 4)
         pygame.display.update()
 
 
 def test_events(): 
     while mr305.game_in_progress:
-        P1.move_player_to_position(15)
-        P2.move_player_to_position(47)
+        dice_1 = randint(1, 6)
+        dice_2 = randint(1, 6)
+        P1.move_player_to_position(dice_1)
+        P2.move_player_to_position(dice_2)
+
 
 
 def main(): 
     init_game()
 
     # Threading part 
-    rendering_thread = threading.Thread(target=render, daemon=True)
-    test_thread = threading.Thread(target=test_events)
+    rendering_thread = threading.Thread(target=render)
+    test_thread = threading.Thread(target=test_events, daemon=True)
 
      
     # There could be a thread which is always performing the rendering of the game 
