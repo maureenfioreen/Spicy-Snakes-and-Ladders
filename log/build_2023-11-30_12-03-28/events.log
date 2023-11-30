@@ -1,0 +1,423 @@
+[0.000000] (-) TimerEvent: {}
+[0.000432] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.000462] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.000478] (game) JobQueued: {'identifier': 'game', 'dependencies': OrderedDict([('custom_msgs', '/home/g209/ros2_ws/install/custom_msgs')])}
+[0.005020] (game) JobStarted: {'identifier': 'game'}
+[0.071653] (game) JobProgress: {'identifier': 'game', 'progress': 'cmake'}
+[0.072134] (game) JobProgress: {'identifier': 'game', 'progress': 'build'}
+[0.072158] (game) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/g209/ros2_ws/build/game', '--', '-j2', '-l2'], 'cwd': '/home/g209/ros2_ws/build/game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'g209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/g209/ros2_ws/install/custom_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/g209'), ('OLDPWD', '/home/g209'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1637'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'g209'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'g209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu4ROS2:@/tmp/.ICE-unix/1609,unix/Ubuntu4ROS2:/tmp/.ICE-unix/1609'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dab8b2e5_1d42_4c1d_8315_d56e29785c80'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'de_DE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.TWSHF2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.217'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/g209/ros2_ws/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/g209/ros2_ws/build/game'), ('LC_ALL', 'de_DE.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/g209/ros2_ws/install/custom_msgs:/opt/ros/humble')]), 'shell': False}
+[0.100932] (game) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.101693] (-) TimerEvent: {}
+[0.202794] (-) TimerEvent: {}
+[0.257025] (game) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.258645] (game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.261014] (game) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.283341] (game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.303527] (-) TimerEvent: {}
+[0.310485] (game) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.368362] (game) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.371760] (game) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.404106] (-) TimerEvent: {}
+[0.505233] (-) TimerEvent: {}
+[0.511507] (game) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.640495] (-) TimerEvent: {}
+[0.640934] (game) StdoutLine: {'line': b'-- Found custom_msgs: 0.0.0 (/home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake)\n'}
+[0.748758] (-) TimerEvent: {}
+[0.855691] (-) TimerEvent: {}
+[0.877483] (game) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.956621] (-) TimerEvent: {}
+[1.035644] (game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.059244] (-) TimerEvent: {}
+[1.161895] (-) TimerEvent: {}
+[1.252923] (game) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.262903] (-) TimerEvent: {}
+[1.272728] (game) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.290933] (game) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.291149] (game) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.291197] (game) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.303428] (game) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.328599] (game) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.329292] (game) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.329424] (game) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.332125] (game) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.336763] (game) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.339560] (game) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.349990] (game) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.350120] (game) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.352444] (game) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.354670] (game) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.363062] (-) TimerEvent: {}
+[1.430892] (game) StdoutLine: {'line': b'-- Generating done\n'}
+[1.442737] (game) StdoutLine: {'line': b'-- Build files have been written to: /home/g209/ros2_ws/build/game\n'}
+[1.463253] (-) TimerEvent: {}
+[1.474605] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game__rosidl_generator_c\x1b[0m\n'}
+[1.483704] (game) StdoutLine: {'line': b'[  3%] Built target game__cpp\n'}
+[1.485955] (game) StdoutLine: {'line': b'[ 12%] Built target game__rosidl_generator_c\n'}
+[1.498401] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target snakes_and_ladders_game\x1b[0m\n'}
+[1.525944] (game) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/snakes_and_ladders_game.dir/src/board_controller.cpp.o\x1b[0m\n'}
+[1.539285] (game) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_copy_game\n'}
+[1.550094] (game) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.695525] (-) TimerEvent: {}
+[1.728700] (game) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/game/msg/game_state_msg__type_support.cpp.o\x1b[0m\n'}
+[1.796170] (-) TimerEvent: {}
+[1.897571] (-) TimerEvent: {}
+[2.081342] (-) TimerEvent: {}
+[2.182111] (-) TimerEvent: {}
+[2.289014] (-) TimerEvent: {}
+[2.536606] (-) TimerEvent: {}
+[2.569694] (game) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking CXX shared library libgame__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.637382] (-) TimerEvent: {}
+[2.657643] (game) StdoutLine: {'line': b'[ 24%] Built target game__rosidl_typesupport_cpp\n'}
+[2.684022] (game) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.739516] (-) TimerEvent: {}
+[2.923848] (-) TimerEvent: {}
+[3.008341] (game) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/game/msg/detail/game_state_msg__type_support_c.cpp.o\x1b[0m\n'}
+[3.032113] (-) TimerEvent: {}
+[3.211071] (-) TimerEvent: {}
+[3.278134] (game) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libgame__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.314131] (-) TimerEvent: {}
+[3.451767] (-) TimerEvent: {}
+[3.473729] (game) StdoutLine: {'line': b'[ 33%] Built target game__rosidl_typesupport_fastrtps_c\n'}
+[3.616391] (-) TimerEvent: {}
+[3.635543] (game) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.723892] (-) TimerEvent: {}
+[3.888603] (-) TimerEvent: {}
+[3.990268] (-) TimerEvent: {}
+[4.003318] (game) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/game__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/game/msg/detail/game_state_msg__type_support.c.o\x1b[0m\n'}
+[4.094627] (-) TimerEvent: {}
+[4.183544] (game) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking C shared library libgame__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.184270] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[4.184391] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:15:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kgame_state_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.184434] (game) StderrLine: {'line': b'   15 |             [this](\x1b[01;35m\x1b[Kconst custom_msgs::msg::GameStateMsg::SharedPtr game_state_msg\x1b[m\x1b[K) {\n'}
+[4.184482] (game) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.196454] (-) TimerEvent: {}
+[4.196845] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid handlePlayerMove()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.197351] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:26:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgame_state_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.197416] (game) StderrLine: {'line': b'   26 |             \x1b[01;31m\x1b[Kgame_state_msg\x1b[m\x1b[K.dice_result = rollDice();\n'}
+[4.197451] (game) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.212891] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:26:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KrollDice\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.213133] (game) StderrLine: {'line': b'   26 |             game_state_msg.dice_result = \x1b[01;31m\x1b[KrollDice\x1b[m\x1b[K();\n'}
+[4.213216] (game) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.227004] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:29:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcheckForSnakeOrLadder\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.227169] (game) StderrLine: {'line': b'   29 |             \x1b[01;31m\x1b[KcheckForSnakeOrLadder\x1b[m\x1b[K(game_state_msg.dice_result);\n'}
+[4.227209] (game) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.235199] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:31:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgame_state_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.235383] (game) StderrLine: {'line': b'   31 |             \x1b[01;31m\x1b[Kgame_state_msg\x1b[m\x1b[K.dice_result = 0; // Game already won\n'}
+[4.235423] (game) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.235454] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:34:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.235488] (game) StderrLine: {'line': b'   34 |         \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->game_state_publisher_->publish(game_state_msg);\n'}
+[4.235518] (game) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.237875] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:34:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgame_state_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.238003] (game) StderrLine: {'line': b'   34 |         this->game_state_publisher_->publish(\x1b[01;31m\x1b[Kgame_state_msg\x1b[m\x1b[K);\n'}
+[4.238039] (game) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.249003] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint rollDice()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.249224] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:40:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgame_state_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.249300] (game) StderrLine: {'line': b'   40 |         \x1b[01;31m\x1b[Kgame_state_msg\x1b[m\x1b[K.game_message = "You rolled a " + std::to_string(roll);\n'}
+[4.249361] (game) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.251817] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid checkForSnakeOrLadder(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.251948] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:55:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgame_state_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.251988] (game) StderrLine: {'line': b'   55 |         int newPosition = \x1b[01;31m\x1b[Kgame_state_msg\x1b[m\x1b[K.player_position + roll;\n'}
+[4.252021] (game) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.253305] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.253382] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.253585] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.253633] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.253665] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.253695] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.253725] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.253761] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.253792] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.253820] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.253850] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.253879] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.253910] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.253941] (game) StderrLine: {'line': b'   59 |                 RCLCPP_INFO(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "You landed on a ladder. Do you wish to take it? (y/n) %d");\n'}
+[4.253969] (game) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.253998] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[4.254026] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.254055] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.254083] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.254111] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.254138] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.254168] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.254275] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.254333] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.254366] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.254397] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.254426] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.254457] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.254488] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.254522] (game) StderrLine: {'line': b'  106 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[4.254549] (game) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.254577] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.254606] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.254635] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.254662] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.254840] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.254891] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.261072] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.261710] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.265684] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.265924] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.266144] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.270231] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.270460] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.270669] (game) StderrLine: {'line': b'   59 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");\n'}
+[4.270870] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.271071] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.271418] (game) StderrLine: {'line': b'   59 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");\n'}
+[4.271635] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.271855] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.272055] (game) StderrLine: {'line': b'   59 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");\n'}
+[4.272263] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.272477] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.272687] (game) StderrLine: {'line': b'   59 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");\n'}
+[4.272888] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.273084] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.273293] (game) StderrLine: {'line': b'   59 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");\n'}
+[4.273495] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.273923] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.274164] (game) StderrLine: {'line': b'   66 |                     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Climbed a ladder! You\'re now at position %d", newPosition);\n'}
+[4.274512] (game) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.274876] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.276045] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.276299] (game) StderrLine: {'line': b'   66 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Climbed a ladder! You\'re now at position %d", newPosition);\n'}
+[4.276512] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.276721] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.276937] (game) StderrLine: {'line': b'   66 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Climbed a ladder! You\'re now at position %d", newPosition);\n'}
+[4.277161] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.277378] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.277586] (game) StderrLine: {'line': b'   66 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Climbed a ladder! You\'re now at position %d", newPosition);\n'}
+[4.277798] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.278007] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.278447] (game) StderrLine: {'line': b'   66 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Climbed a ladder! You\'re now at position %d", newPosition);\n'}
+[4.278700] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.278914] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.279127] (game) StderrLine: {'line': b'   66 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Climbed a ladder! You\'re now at position %d", newPosition);\n'}
+[4.279343] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.279550] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[4.280085] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.280344] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.280583] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.280831] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.281261] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.282312] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.282553] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.282773] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.283432] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.284016] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.284235] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.284551] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.284768] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.284989] (game) StderrLine: {'line': b'   66 |                     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Climbed a ladder! You\'re now at position %d", newPosition);\n'}
+[4.285375] (game) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.285579] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.285788] (game) StderrLine: {'line': b'   66 |                     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Climbed a ladder! You\'re now at position %d", newPosition);\n'}
+[4.285990] (game) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.286377] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.286642] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.288440] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.299936] (-) TimerEvent: {}
+[4.300569] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.301178] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.301585] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.301959] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.302299] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.302783] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.303003] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.303208] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.303408] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.303617] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.303817] (game) StderrLine: {'line': b'   72 |                     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "You rolled the dice again! You\'re now at position %d", newPosition);\n'}
+[4.304015] (game) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.304212] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.304408] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.304617] (game) StderrLine: {'line': b'   72 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "You rolled the dice again! You\'re now at position %d", newPosition);\n'}
+[4.304818] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.305014] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.305215] (game) StderrLine: {'line': b'   72 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "You rolled the dice again! You\'re now at position %d", newPosition);\n'}
+[4.305412] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.305640] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.305937] (game) StderrLine: {'line': b'   72 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "You rolled the dice again! You\'re now at position %d", newPosition);\n'}
+[4.306718] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.306962] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.307183] (game) StderrLine: {'line': b'   72 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "You rolled the dice again! You\'re now at position %d", newPosition);\n'}
+[4.307393] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.307610] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.307811] (game) StderrLine: {'line': b'   72 |                     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "You rolled the dice again! You\'re now at position %d", newPosition);\n'}
+[4.308010] (game) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.308208] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[4.308411] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.308618] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.308820] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.309016] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.309214] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.309420] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.309625] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.309825] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.310021] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.310222] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.310422] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.310620] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.310817] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.311072] (game) StderrLine: {'line': b'   72 |                     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "You rolled the dice again! You\'re now at position %d", newPosition);\n'}
+[4.311304] (game) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.311638] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.311862] (game) StderrLine: {'line': b'   72 |                     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "You rolled the dice again! You\'re now at position %d", newPosition);\n'}
+[4.312073] (game) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.312275] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.312473] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.312830] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.313045] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.313253] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.313520] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.314040] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.315532] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.315768] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.315985] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.317241] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.317460] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.317678] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.317899] (game) StderrLine: {'line': b'   79 |                 RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Oops, a snake! You\'re now at position %d", newPosition);\n'}
+[4.318117] (game) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.318326] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.318538] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.318794] (game) StderrLine: {'line': b'   79 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Oops, a snake! You\'re now at position %d", newPosition);\n'}
+[4.319012] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.319223] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.319436] (game) StderrLine: {'line': b'   79 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Oops, a snake! You\'re now at position %d", newPosition);\n'}
+[4.319649] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.319864] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.320073] (game) StderrLine: {'line': b'   79 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Oops, a snake! You\'re now at position %d", newPosition);\n'}
+[4.320284] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.320574] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.321211] (game) StderrLine: {'line': b'   79 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Oops, a snake! You\'re now at position %d", newPosition);\n'}
+[4.323067] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.323496] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.323815] (game) StderrLine: {'line': b'   79 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Oops, a snake! You\'re now at position %d", newPosition);\n'}
+[4.324307] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.324539] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[4.324750] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.324959] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.325170] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.325387] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.325598] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.325807] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.326023] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.326233] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.326454] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.326662] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.326870] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.327077] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.327306] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.327516] (game) StderrLine: {'line': b'   79 |                 RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Oops, a snake! You\'re now at position %d", newPosition);\n'}
+[4.327729] (game) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.327936] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.328145] (game) StderrLine: {'line': b'   79 |                 RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Oops, a snake! You\'re now at position %d", newPosition);\n'}
+[4.328999] (game) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.330187] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.335815] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.336267] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.336617] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.336898] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.337366] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.337609] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.344484] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.344829] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.345039] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.345251] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.345512] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.345933] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.346219] (game) StderrLine: {'line': b'   84 |                 RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Normal square! You\'re now at position %d", newPosition);\n'}
+[4.346648] (game) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.346867] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.347071] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.347287] (game) StderrLine: {'line': b'   84 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Normal square! You\'re now at position %d", newPosition);\n'}
+[4.347486] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.347822] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.348112] (game) StderrLine: {'line': b'   84 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Normal square! You\'re now at position %d", newPosition);\n'}
+[4.348366] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.348584] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.348844] (game) StderrLine: {'line': b'   84 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Normal square! You\'re now at position %d", newPosition);\n'}
+[4.349240] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.349636] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.350041] (game) StderrLine: {'line': b'   84 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Normal square! You\'re now at position %d", newPosition);\n'}
+[4.350424] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.350770] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.351010] (game) StderrLine: {'line': b'   84 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Normal square! You\'re now at position %d", newPosition);\n'}
+[4.351279] (game) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.351636] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[4.352019] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.354848] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.355086] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.355313] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.355533] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.355742] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.355948] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.356153] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.356362] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.356574] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.356782] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4\x1b[m\x1b[K,\n'}
+[4.356982] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1\x1b[m\x1b[K:\n'}
+[4.357184] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.357409] (game) StderrLine: {'line': b'   84 |                 RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Normal square! You\'re now at position %d", newPosition);\n'}
+[4.357615] (game) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.357814] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.358013] (game) StderrLine: {'line': b'   84 |                 RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Normal square! You\'re now at position %d", newPosition);\n'}
+[4.358211] (game) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.365825] (game) StdoutLine: {'line': b'[ 42%] Built target game__rosidl_typesupport_introspection_c\n'}
+[4.403439] (-) TimerEvent: {}
+[4.413482] (game) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.520183] (-) TimerEvent: {}
+[4.699950] (game) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_c.dir/rosidl_typesupport_c/game/msg/game_state_msg__type_support.cpp.o\x1b[0m\n'}
+[4.700206] (-) TimerEvent: {}
+[4.788994] (game) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libgame__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.800789] (-) TimerEvent: {}
+[4.887538] (game) StdoutLine: {'line': b'[ 51%] Built target game__rosidl_typesupport_c\n'}
+[4.900804] (game) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.901022] (-) TimerEvent: {}
+[5.002116] (-) TimerEvent: {}
+[5.116404] (-) TimerEvent: {}
+[5.224708] (-) TimerEvent: {}
+[5.230264] (game) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/game/msg/detail/dds_fastrtps/game_state_msg__type_support.cpp.o\x1b[0m\n'}
+[5.373969] (-) TimerEvent: {}
+[5.537671] (-) TimerEvent: {}
+[5.642469] (-) TimerEvent: {}
+[5.726604] (game) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libgame__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.743317] (-) TimerEvent: {}
+[5.825117] (game) StdoutLine: {'line': b'[ 60%] Built target game__rosidl_typesupport_fastrtps_cpp\n'}
+[5.838099] (game) StdoutLine: {'line': b'[ 63%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.852997] (-) TimerEvent: {}
+[5.963889] (-) TimerEvent: {}
+[6.040162] (game) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/game/msg/detail/game_state_msg__type_support.cpp.o\x1b[0m\n'}
+[6.088023] (-) TimerEvent: {}
+[6.273585] (-) TimerEvent: {}
+[6.289931] (game) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libgame__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.390404] (-) TimerEvent: {}
+[6.403413] (game) StdoutLine: {'line': b'[ 69%] Built target game__rosidl_typesupport_introspection_cpp\n'}
+[6.558259] (game) StdoutLine: {'line': b'running egg_info\n'}
+[6.559767] (-) TimerEvent: {}
+[6.560475] (game) StdoutLine: {'line': b'creating game.egg-info\n'}
+[6.560830] (game) StdoutLine: {'line': b'writing game.egg-info/PKG-INFO\n'}
+[6.561125] (game) StdoutLine: {'line': b'writing dependency_links to game.egg-info/dependency_links.txt\n'}
+[6.582055] (game) StdoutLine: {'line': b'writing top-level names to game.egg-info/top_level.txt\n'}
+[6.582516] (game) StdoutLine: {'line': b"writing manifest file 'game.egg-info/SOURCES.txt'\n"}
+[6.585308] (game) StdoutLine: {'line': b"reading manifest file 'game.egg-info/SOURCES.txt'\n"}
+[6.585910] (game) StdoutLine: {'line': b"writing manifest file 'game.egg-info/SOURCES.txt'\n"}
+[6.679152] (game) StdoutLine: {'line': b'[ 69%] Built target ament_cmake_python_build_game_egg\n'}
+[6.679622] (-) TimerEvent: {}
+[6.700026] (game) StdoutLine: {'line': b'[ 69%] Built target game\n'}
+[6.720149] (game) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.780315] (-) TimerEvent: {}
+[6.842407] (game) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/snakes_and_ladders_game.dir/build.make:76: CMakeFiles/snakes_and_ladders_game.dir/src/board_controller.cpp.o] Fehler 1\n'}
+[6.842825] (game) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:592: CMakeFiles/snakes_and_ladders_game.dir/all] Fehler 2\n'}
+[6.843041] (game) StderrLine: {'line': b'gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet \xe2\x80\xa6\n'}
+[6.901166] (-) TimerEvent: {}
+[7.015496] (-) TimerEvent: {}
+[7.032854] (game) StdoutLine: {'line': b'[ 72%] Built target game__py\n'}
+[7.033453] (game) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Fehler 2\n'}
+[7.036401] (game) CommandEnded: {'returncode': 2}
+[7.115571] (-) TimerEvent: {}
+[7.217659] (-) TimerEvent: {}
+[7.234086] (game) JobEnded: {'identifier': 'game', 'rc': 2}
+[7.244684] (-) EventReactorShutdown: {}

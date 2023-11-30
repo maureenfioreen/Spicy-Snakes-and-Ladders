@@ -1,0 +1,4 @@
+int32 dice_result
+int32 player_id
+---
+int32 new_position

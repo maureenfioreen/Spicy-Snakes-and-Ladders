@@ -1,0 +1,190 @@
+[0.116s] Invoking command in '/home/g209/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g209/ros2_ws/build/custom_msgs -- -j2 -l2
+[0.236s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_c[0m
+[0.263s] [ 10%] Built target custom_msgs__rosidl_generator_c
+[0.269s] [ 12%] Built target custom_msgs__cpp
+[0.356s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_cpp[0m
+[0.376s] [ 23%] Built target custom_msgs__rosidl_typesupport_cpp
+[0.415s] [ 23%] Built target ament_cmake_python_copy_custom_msgs
+[0.433s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.444s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c[0m
+[0.512s] [ 33%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[0.523s] [ 43%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[0.545s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c[0m
+[0.574s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.602s] [ 53%] Built target custom_msgs__rosidl_typesupport_c
+[0.626s] [ 64%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[0.663s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.853s] running egg_info
+[0.853s] [ 74%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[0.898s] writing custom_msgs.egg-info/PKG-INFO
+[0.901s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[0.904s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[0.912s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[0.915s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[1.037s] [ 74%] Built target custom_msgs
+[1.053s] [ 74%] Built target ament_cmake_python_build_custom_msgs_egg
+[1.255s] [ 76%] Built target custom_msgs__py
+[1.282s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_generator_py[0m
+[1.320s] [ 84%] Built target custom_msgs__rosidl_generator_py
+[1.376s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.416s] [ 89%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.421s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.460s] [35m[1mConsolidate compiler generated dependencies of target custom_msgs__rosidl_typesupport_c__pyext[0m
+[1.491s] [ 94%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[1.511s] [100%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[1.560s] Invoked command in '/home/g209/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g209/ros2_ws/build/custom_msgs -- -j2 -l2
+[1.769s] Invoking command in '/home/g209/ros2_ws/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/g209/ros2_ws/build/custom_msgs
+[2.018s] -- Install configuration: ""
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/player_move.h
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__functions.h
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__functions.c
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__struct.h
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__type_support.h
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__struct.h
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__functions.c
+[2.018s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__functions.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__type_support.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/game_state_msg.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__rosidl_typesupport_fastrtps_c.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__rosidl_typesupport_fastrtps_c.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__rosidl_typesupport_introspection_c.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__type_support.c
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__type_support.c
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__rosidl_typesupport_introspection_c.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[2.019s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__struct.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__traits.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__builder.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/player_move.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__traits.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__builder.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__struct.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/game_state_msg.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/dds_fastrtps
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__rosidl_typesupport_fastrtps_cpp.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__type_support.cpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/player_move__rosidl_typesupport_introspection_cpp.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__type_support.cpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/game_state_msg__rosidl_typesupport_introspection_cpp.hpp
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[2.020s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info
+[2.020s] -- Installing: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.021s] -- Installing: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[2.021s] -- Installing: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[2.021s] -- Installing: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.021s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs
+[2.021s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_player_move_s.c
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_player_move.py
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_game_state_msg.py
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_game_state_msg_s.c
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.037s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so
+[2.149s] Listing '/home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...
+[2.149s] Listing '/home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...
+[2.149s] Listing '/home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv'...
+[2.182s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.183s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.183s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.183s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[2.183s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/msg/GameStateMsg.idl
+[2.184s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/srv/PlayerMove.idl
+[2.184s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/msg/GameStateMsg.msg
+[2.184s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/srv/PlayerMove.srv
+[2.184s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/srv/PlayerMove_Request.msg
+[2.185s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/srv/PlayerMove_Response.msg
+[2.186s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[2.186s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[2.186s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[2.186s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[2.186s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.sh
+[2.186s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[2.186s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.bash
+[2.187s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.sh
+[2.187s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[2.187s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[2.187s] -- Installing: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/package.dsv
+[2.187s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[2.187s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[2.187s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.187s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.187s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.188s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.188s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.188s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[2.189s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.190s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.191s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.191s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.191s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.191s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[2.191s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[2.191s] -- Up-to-date: /home/g209/ros2_ws/install/custom_msgs/share/custom_msgs/package.xml
+[2.209s] Invoked command in '/home/g209/ros2_ws/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/g209/ros2_ws/build/custom_msgs

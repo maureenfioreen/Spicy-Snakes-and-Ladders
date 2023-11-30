@@ -1,0 +1,160 @@
+[0.536s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'game']
+[0.536s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['game'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc86eb6b850>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc87036bd30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc87036bd30>>)
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.568s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/g209/ros2_ws'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[0.581s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extensions ['ignore', 'ignore_ament_install']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'ignore'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'ignore_ament_install'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extensions ['colcon_pkg']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'colcon_pkg'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extensions ['colcon_meta']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'colcon_meta'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extensions ['ros']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'ros'
+[0.582s] DEBUG:colcon.colcon_core.package_identification:Package 'src/game' with type 'ros.ament_cmake' and name 'game'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ignore'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ignore_ament_install'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['colcon_pkg']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'colcon_pkg'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['colcon_meta']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'colcon_meta'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['ros']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ros'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['cmake', 'python']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'cmake'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'python'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['python_setup_py']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'python_setup_py'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) ignored
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) ignored
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) ignored
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ignore_ament_install'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['colcon_pkg']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'colcon_pkg'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['colcon_meta']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'colcon_meta'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extensions ['ros']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/turtlesim) by extension 'ros'
+[0.586s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_tutorials/turtlesim' with type 'ros.ament_cmake' and name 'turtlesim'
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.586s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.618s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'custom_msgs' in 'src/custom_msgs'
+[0.619s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'turtlesim' in 'src/ros_tutorials/turtlesim'
+[0.632s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.632s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.646s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 282 installed packages in /opt/ros/humble
+[0.647s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_args' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_target' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_clean_cache' from command line to 'False'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_clean_first' from command line to 'False'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_force_configure' from command line to 'False'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'ament_cmake_args' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'catkin_cmake_args' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.697s] DEBUG:colcon.colcon_core.verb:Building package 'game' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g209/ros2_ws/build/game', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g209/ros2_ws/install/game', 'merge_install': False, 'path': '/home/g209/ros2_ws/src/game', 'symlink_install': False, 'test_result_base': None}
+[0.705s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.719s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.721s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/g209/ros2_ws/src/game' with build type 'ament_cmake'
+[0.722s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/g209/ros2_ws/src/game'
+[0.740s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.740s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.740s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g209/ros2_ws/build/game': AMENT_PREFIX_PATH=/home/g209/ros2_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/g209/ros2_ws/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/g209/ros2_ws/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/g209/ros2_ws/build/game -- -j2 -l2
+[4.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g209/ros2_ws/build/game' returned '2': AMENT_PREFIX_PATH=/home/g209/ros2_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/g209/ros2_ws/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/g209/ros2_ws/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/g209/ros2_ws/build/game -- -j2 -l2
+[5.170s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(game)
+[5.186s] Level 1:colcon.colcon_core.environment:checking '/home/g209/ros2_ws/install/game' for CMake module files
+[5.187s] Level 1:colcon.colcon_core.environment:checking '/home/g209/ros2_ws/install/game' for CMake config files
+[5.187s] Level 1:colcon.colcon_core.environment:checking '/home/g209/ros2_ws/install/game/bin'
+[5.187s] Level 1:colcon.colcon_core.environment:checking '/home/g209/ros2_ws/install/game/lib/pkgconfig/game.pc'
+[5.187s] Level 1:colcon.colcon_core.environment:checking '/home/g209/ros2_ws/install/game/lib/python3.10/site-packages'
+[5.187s] Level 1:colcon.colcon_core.environment:checking '/home/g209/ros2_ws/install/game/bin'
+[5.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/g209/ros2_ws/install/game/share/game/package.ps1'
+[5.197s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g209/ros2_ws/install/game/share/game/package.dsv'
+[5.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/g209/ros2_ws/install/game/share/game/package.sh'
+[5.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/g209/ros2_ws/install/game/share/game/package.bash'
+[5.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/g209/ros2_ws/install/game/share/game/package.zsh'
+[5.226s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g209/ros2_ws/install/game/share/colcon-core/packages/game)
+[5.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[5.229s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.260s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.260s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.260s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.296s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g209/ros2_ws/install/local_setup.ps1'
+[5.320s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/g209/ros2_ws/install/_local_setup_util_ps1.py'
+[5.322s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g209/ros2_ws/install/setup.ps1'
+[5.331s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g209/ros2_ws/install/local_setup.sh'
+[5.332s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/g209/ros2_ws/install/_local_setup_util_sh.py'
+[5.332s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g209/ros2_ws/install/setup.sh'
+[5.343s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g209/ros2_ws/install/local_setup.bash'
+[5.350s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g209/ros2_ws/install/setup.bash'
+[5.360s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g209/ros2_ws/install/local_setup.zsh'
+[5.361s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g209/ros2_ws/install/setup.zsh'

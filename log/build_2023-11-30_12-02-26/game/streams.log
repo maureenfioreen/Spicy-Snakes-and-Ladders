@@ -1,0 +1,294 @@
+[0.073s] Invoking command in '/home/g209/ros2_ws/build/game': AMENT_PREFIX_PATH=/home/g209/ros2_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/g209/ros2_ws/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/g209/ros2_ws/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/g209/ros2_ws/build/game -- -j2 -l2
+[0.199s] [  2%] Built target game__cpp
+[0.208s] [ 10%] Built target game__rosidl_generator_c
+[0.224s] [35m[1mConsolidate compiler generated dependencies of target snakes_and_ladders_game[0m
+[0.245s] [ 10%] Built target ament_cmake_python_copy_game
+[0.289s] [35m[1mConsolidate compiler generated dependencies of target player_node[0m
+[0.289s] [ 13%] [32mBuilding CXX object CMakeFiles/player_node.dir/src/player.cpp.o[0m
+[0.289s] [ 16%] [32mBuilding CXX object CMakeFiles/snakes_and_ladders_game.dir/src/board_controller.cpp.o[0m
+[0.296s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/g209/ros2_ws/src/game/src/player.cpp: Datei oder Verzeichnis nicht gefunden
+[0.296s] compilation terminated.
+[0.296s] gmake[2]: *** [CMakeFiles/player_node.dir/build.make:76: CMakeFiles/player_node.dir/src/player.cpp.o] Fehler 1
+[0.297s] gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/player_node.dir/all] Fehler 2
+[0.297s] gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+[2.235s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:[m[K In lambda function:
+[2.235s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:15:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgame_state_msg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.235s]    15 |             [this]([01;35m[Kconst custom_msgs::msg::GameStateMsg::SharedPtr game_state_msg[m[K) {
+[2.235s]       |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.240s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:[m[K In function ‘[01m[Kvoid handlePlayerMove()[m[K’:
+[2.240s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:26:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgame_state_msg[m[K’ was not declared in this scope
+[2.240s]    26 |             [01;31m[Kgame_state_msg[m[K.dice_result = rollDice();
+[2.240s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.243s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:26:42:[m[K [01;31m[Kerror: [m[K‘[01m[KrollDice[m[K’ was not declared in this scope
+[2.243s]    26 |             game_state_msg.dice_result = [01;31m[KrollDice[m[K();
+[2.243s]       |                                          [01;31m[K^~~~~~~~[m[K
+[2.248s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcheckForSnakeOrLadder[m[K’ was not declared in this scope
+[2.248s]    29 |             [01;31m[KcheckForSnakeOrLadder[m[K(game_state_msg.dice_result);
+[2.248s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.251s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:31:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgame_state_msg[m[K’ was not declared in this scope
+[2.251s]    31 |             [01;31m[Kgame_state_msg[m[K.dice_result = 0; // Game already won
+[2.251s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.251s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:34:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.251s]    34 |         [01;31m[Kthis[m[K->game_state_publisher_->publish(game_state_msg);
+[2.251s]       |         [01;31m[K^~~~[m[K
+[2.254s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:34:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kgame_state_msg[m[K’ was not declared in this scope
+[2.254s]    34 |         this->game_state_publisher_->publish([01;31m[Kgame_state_msg[m[K);
+[2.254s]       |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.260s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:[m[K In function ‘[01m[Kint rollDice()[m[K’:
+[2.260s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:40:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgame_state_msg[m[K’ was not declared in this scope
+[2.260s]    40 |         [01;31m[Kgame_state_msg[m[K.game_message = "You rolled a " + std::to_string(roll);
+[2.260s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.267s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:[m[K In function ‘[01m[Kvoid checkForSnakeOrLadder(int)[m[K’:
+[2.267s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:55:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kgame_state_msg[m[K’ was not declared in this scope
+[2.267s]    55 |         int newPosition = [01;31m[Kgame_state_msg[m[K.player_position + roll;
+[2.267s]       |                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.268s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.268s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.268s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.268s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[2.268s]    59 |                 RCLCPP_INFO([01;31m[Kget_logger[m[K(), "You landed on a ladder. Do you wish to take it? (y/n) %d");
+[2.268s]       |                             [01;31m[K^~~~~~~~~~[m[K
+[2.268s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.268s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.268s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.268s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.268s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[2.268s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[2.269s]       |                 [01;36m[K^~~~~~[m[K
+[2.269s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.276s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.277s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.277s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.277s]    59 |                 [01;31m[KRCLCPP_INFO[m[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");
+[2.277s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.277s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.277s]    59 |                 [01;31m[KRCLCPP_INFO[m[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");
+[2.277s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.277s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.277s]    59 |                 [01;31m[KRCLCPP_INFO[m[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");
+[2.277s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.277s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.277s]    59 |                 [01;31m[KRCLCPP_INFO[m[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");
+[2.277s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.277s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:59:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.277s]    59 |                 [01;31m[KRCLCPP_INFO[m[K(get_logger(), "You landed on a ladder. Do you wish to take it? (y/n) %d");
+[2.277s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.277s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:33:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.277s]    66 |                     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+[2.277s]       |                                 [01;31m[K^~~~[m[K
+[2.277s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:33:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.278s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.278s]    66 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+[2.278s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.278s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.278s]    66 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+[2.278s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.278s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.278s]    66 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+[2.278s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.278s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.278s]    66 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+[2.278s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.278s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.278s]    66 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+[2.278s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.278s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.278s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.278s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.278s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:33:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.278s]    66 |                     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+[2.278s]       |                                 [01;31m[K^~~~[m[K
+[2.278s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:66:33:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.278s]    66 |                     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Climbed a ladder! You're now at position %d", newPosition);
+[2.278s]       |                                 [01;31m[K^~~~[m[K
+[2.278s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.279s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.279s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.279s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:33:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.279s]    72 |                     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+[2.279s]       |                                 [01;31m[K^~~~[m[K
+[2.279s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:33:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.279s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.279s]    72 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+[2.279s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.279s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.279s]    72 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+[2.279s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.279s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.279s]    72 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+[2.279s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.279s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.279s]    72 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+[2.279s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.279s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.279s]    72 |                     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+[2.279s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.279s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.280s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.280s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.280s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:33:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.280s]    72 |                     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+[2.280s]       |                                 [01;31m[K^~~~[m[K
+[2.280s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:72:33:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.280s]    72 |                     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "You rolled the dice again! You're now at position %d", newPosition);
+[2.280s]       |                                 [01;31m[K^~~~[m[K
+[2.280s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.280s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.280s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.280s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.280s]    79 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+[2.280s]       |                             [01;31m[K^~~~[m[K
+[2.280s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.280s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.280s]    79 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+[2.280s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.280s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.280s]    79 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+[2.280s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.280s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.280s]    79 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+[2.281s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.281s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.281s]    79 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+[2.281s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.281s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.281s]    79 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+[2.281s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.281s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.281s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.281s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.281s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.281s]    79 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+[2.281s]       |                             [01;31m[K^~~~[m[K
+[2.281s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:79:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.281s]    79 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Oops, a snake! You're now at position %d", newPosition);
+[2.281s]       |                             [01;31m[K^~~~[m[K
+[2.281s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.282s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.282s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.282s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.282s]    84 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Normal square! You're now at position %d", newPosition);
+[2.282s]       |                             [01;31m[K^~~~[m[K
+[2.282s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.282s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.282s]    84 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Normal square! You're now at position %d", newPosition);
+[2.282s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.282s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.282s]    84 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Normal square! You're now at position %d", newPosition);
+[2.282s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.282s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.282s]    84 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Normal square! You're now at position %d", newPosition);
+[2.282s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.283s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.283s]    84 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Normal square! You're now at position %d", newPosition);
+[2.283s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.283s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.283s]    84 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Normal square! You're now at position %d", newPosition);
+[2.283s]       |                 [01;31m[K^~~~~~~~~~~[m[K
+[2.283s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.283s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.hpp:4[m[K,
+[2.283s]                  from [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:1[m[K:
+[2.283s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.283s]    84 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Normal square! You're now at position %d", newPosition);
+[2.283s]       |                             [01;31m[K^~~~[m[K
+[2.283s] [01m[K/home/g209/ros2_ws/src/game/src/board_controller.cpp:84:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.283s]    84 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Normal square! You're now at position %d", newPosition);
+[2.283s]       |                             [01;31m[K^~~~[m[K
+[4.190s] gmake[2]: *** [CMakeFiles/snakes_and_ladders_game.dir/build.make:76: CMakeFiles/snakes_and_ladders_game.dir/src/board_controller.cpp.o] Fehler 1
+[4.213s] gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/snakes_and_ladders_game.dir/all] Fehler 2
+[4.213s] gmake: *** [Makefile:146: all] Fehler 2
+[4.213s] Invoked command in '/home/g209/ros2_ws/build/game' returned '2': AMENT_PREFIX_PATH=/home/g209/ros2_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/g209/ros2_ws/install/custom_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/g209/ros2_ws/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/g209/ros2_ws/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/g209/ros2_ws/build/game -- -j2 -l2
