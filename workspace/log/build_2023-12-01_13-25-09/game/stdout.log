@@ -1,0 +1,17 @@
+[  3%] Built target game__cpp
+[ 12%] Built target game__rosidl_generator_c
+[ 21%] Built target game__rosidl_typesupport_cpp
+[ 21%] Built target ament_cmake_python_copy_game
+[ 30%] Built target game__rosidl_typesupport_introspection_c
+[ 39%] Built target game__rosidl_typesupport_fastrtps_c
+[ 48%] Built target game__rosidl_typesupport_c
+[ 57%] Built target game__rosidl_typesupport_fastrtps_cpp
+[ 66%] Built target game__rosidl_typesupport_introspection_cpp
+[ 69%] [32mBuilding CXX object CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o[0m
+running egg_info
+writing game.egg-info/PKG-INFO
+writing dependency_links to game.egg-info/dependency_links.txt
+writing top-level names to game.egg-info/top_level.txt
+reading manifest file 'game.egg-info/SOURCES.txt'
+writing manifest file 'game.egg-info/SOURCES.txt'
+[ 69%] Built target ament_cmake_python_build_game_egg

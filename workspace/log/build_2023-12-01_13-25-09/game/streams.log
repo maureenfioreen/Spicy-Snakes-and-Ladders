@@ -1,0 +1,27 @@
+[0.103s] Invoking command in '/home/g209/workspace/build/game': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g209/workspace/build/game -- -j2 -l2
+[0.207s] [  3%] Built target game__cpp
+[0.209s] [ 12%] Built target game__rosidl_generator_c
+[0.254s] [ 21%] Built target game__rosidl_typesupport_cpp
+[0.255s] [ 21%] Built target ament_cmake_python_copy_game
+[0.294s] [ 30%] Built target game__rosidl_typesupport_introspection_c
+[0.295s] [ 39%] Built target game__rosidl_typesupport_fastrtps_c
+[0.320s] [ 48%] Built target game__rosidl_typesupport_c
+[0.324s] [ 57%] Built target game__rosidl_typesupport_fastrtps_cpp
+[0.380s] [ 66%] Built target game__rosidl_typesupport_introspection_cpp
+[0.411s] [ 69%] [32mBuilding CXX object CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o[0m
+[0.555s] running egg_info
+[0.578s] writing game.egg-info/PKG-INFO
+[0.578s] writing dependency_links to game.egg-info/dependency_links.txt
+[0.578s] writing top-level names to game.egg-info/top_level.txt
+[0.578s] reading manifest file 'game.egg-info/SOURCES.txt'
+[0.580s] writing manifest file 'game.egg-info/SOURCES.txt'
+[0.619s] [01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4:10:[m[K [01;31m[Kfatal error: [m[K../../game/include/game/msg/game_state_msg.hpp: Datei oder Verzeichnis nicht gefunden
+[0.619s]     4 | #include [01;31m[K"../../game/include/game/msg/game_state_msg.hpp"[m[K
+[0.619s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.619s] compilation terminated.
+[0.623s] gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1
+[0.624s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2
+[0.624s] gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+[0.639s] [ 69%] Built target ament_cmake_python_build_game_egg
+[0.641s] gmake: *** [Makefile:146: all] Fehler 2
+[0.644s] Invoked command in '/home/g209/workspace/build/game' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g209/workspace/build/game -- -j2 -l2

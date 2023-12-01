@@ -1,0 +1,8 @@
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4:10:[m[K [01;31m[Kfatal error: [m[K../../game/include/game/game/msg/game_state_msg.hpp: Datei oder Verzeichnis nicht gefunden
+    4 | #include [01;31m[K"../../game/include/game/game/msg/game_state_msg.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2
+gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+gmake: *** [Makefile:146: all] Fehler 2

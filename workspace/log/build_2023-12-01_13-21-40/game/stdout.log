@@ -1,0 +1,59 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/g209/workspace/build/game
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_generator_c[0m
+[  3%] Built target game__cpp
+[ 12%] Built target game__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_cpp[0m
+[ 12%] Built target ament_cmake_python_copy_game
+[ 21%] Built target game__rosidl_typesupport_cpp
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_introspection_c[0m
+[ 30%] Built target game__rosidl_typesupport_fastrtps_c
+[ 39%] Built target game__rosidl_typesupport_introspection_c
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_fastrtps_cpp[0m
+[ 48%] Built target game__rosidl_typesupport_c
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_introspection_cpp[0m
+[ 57%] Built target game__rosidl_typesupport_fastrtps_cpp
+[ 66%] Built target game__rosidl_typesupport_introspection_cpp
+[ 69%] [32mBuilding CXX object CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o[0m
+running egg_info
+writing game.egg-info/PKG-INFO
+writing dependency_links to game.egg-info/dependency_links.txt
+writing top-level names to game.egg-info/top_level.txt
+reading manifest file 'game.egg-info/SOURCES.txt'
+writing manifest file 'game.egg-info/SOURCES.txt'
+[ 69%] Built target ament_cmake_python_build_game_egg
+[ 69%] Built target game
+[ 72%] Built target game__py
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_generator_py[0m
+[ 78%] Built target game__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 84%] Built target game__rosidl_typesupport_fastrtps_c__pyext
+[35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_introspection_c__pyext[0m
+[ 90%] Built target game__rosidl_typesupport_introspection_c__pyext

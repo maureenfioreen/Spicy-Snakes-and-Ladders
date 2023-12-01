@@ -1,0 +1,5 @@
+source;share/game/local_setup.bash
+source;share/game/local_setup.dsv
+source;share/game/local_setup.ps1
+source;share/game/local_setup.sh
+source;share/game/local_setup.zsh
