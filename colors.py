@@ -1,10 +1,10 @@
 # Colors
 # Basic, you never know
-ORANGE  = ( 255, 140, 0)
-RED  = ( 255, 0, 0)
-GREEN   = ( 0, 255, 0)
-BLACK = ( 0, 0, 0)
-WHITE  = ( 255, 255, 255)
+ORANGE  = (255, 140, 0)
+RED  = (255, 0, 0)
+GREEN   = (0, 255, 0)
+BLACK = (0, 0, 0)
+WHITE  = (255, 255, 255)
 
 # A better selection 
 BG_COLOR = (40, 41, 38)
@@ -12,8 +12,8 @@ TILE_1_COLOR = (150, 150, 150)
 TILE_2_COLOR = (220, 220, 220)
 YELLOWISH = (233, 237, 171)
 DARK_RED = (107, 6, 38)
-DARK_BLUE = (2, 15, 61)
-MOD_GREEN = ( 20, 255, 42)
+GAMBLE_BLUE = (9, 44, 171)
+#LIME_GREEN = (20, 255, 42)
 LADDER_SQUARE_COL = (72, 151, 84)
 SNAKE_SQUARE_COL = (240,166,57)
 PLAYER_1_COL = (242, 114, 150)

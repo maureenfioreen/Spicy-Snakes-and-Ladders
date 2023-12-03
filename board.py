@@ -11,8 +11,8 @@ board_reference = [[5,-1,0,0,1,0,0],
                    [0,0,0,0,0,2,0],
                    [0,-1,0,0,0,0,0],
                    [0,0,2,0,0,-1,0],
-                   [0,0,1,0,0,0,0],
-                   [0,0,0,0,0,-1,0],
+                   [0,0,1,0,-1,0,0],
+                   [0,0,0,0,0,1,0],
                    [0,-1,0,0,0,0,0]]
 
 
@@ -104,7 +104,7 @@ def draw_board() -> None:
 
     for row in B.squares_list: 
         for element in row:          
-            if element.index == 1 or element.index == B.side_len**2: tile_color = YELLOWISH
+            if element.index == 1: tile_color = YELLOWISH
             else: tile_color = element.color      
             
             tile = Rect(mr305.border_distance_x + offset_x, mr305.border_distance_y + offset_y, mr305.tile_size, mr305.tile_size)

@@ -7,12 +7,11 @@ from random import randint
 
 from players import Player
 from board import draw_board
-from dice import render_dice
 from messages import draw_message_prompt
 
 '''
 Problems: 
-    - Tiles don't seem to be where they are supposed to be 
+    - Choose starting player function (With ROS2 communication!)
     - Messages don't get printed long enough
     - Still no game package to exchange messages!!!
 '''
@@ -52,7 +51,9 @@ def render():
         draw_board()
         draw_message_prompt()
         P1.draw_player()
+        P1.Dice.render_dice(P1.Dice.index)
         P2.draw_player()
+        P2.Dice.render_dice(P2.Dice.index)
         pygame.display.update()
 
 
@@ -64,19 +65,12 @@ def test_events():
         P2.move_player_to_position(dice_2)
 
 
-
 def main(): 
     init_game()
 
     # Threading part 
     rendering_thread = threading.Thread(target=render)
     test_thread = threading.Thread(target=test_events, daemon=True)
-
-     
-    # There could be a thread which is always performing the rendering of the game 
-    # and another one performing all of the other actions
-
-    # --> This way the input is always checked for and the functions get spread more evenly 
     
     rendering_thread.start()
     test_thread.start()

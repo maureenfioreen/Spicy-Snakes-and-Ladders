@@ -1,5 +1,5 @@
 import colors
-from pygame import event, KEYDOWN, K_RIGHT, K_LEFT
+from pygame import event, KEYDOWN, K_SPACE, K_INSERT
 import time
 from random import randint
 from messages import print_message
@@ -77,13 +77,13 @@ class Winning_Square(Square):
         super().__init__(index)
         self.name = 'Winning Square'
         self.message = 'YOU WON THE GAME!!! CONGRATS :D'
-        self.color = colors.MOD_GREEN
+        self.color = colors.DARK_RED
 
     def perform_action(self, player): 
         winning_message = player.id + self.message
 
         # print winning message 
-        print_message(winning_message)
+        player.MessageDisplayer.print_message(winning_message)
         # Why the fuck are you not accessed?
         set_game_state(False) 
         
@@ -104,7 +104,7 @@ class Gambling_Square(Square):
         self.punishment = -7
         self.safe_route_increment = 3
         self.message = f'Would you like to gamble for \n a better chance at advancing \nor take the safe route?'
-        self.color = colors.DARK_BLUE
+        self.color = colors.GAMBLE_BLUE
     
 
     def gamble(self, player): 
@@ -129,10 +129,10 @@ class Gambling_Square(Square):
             # check for user input 
             for action in event.get():
                 if action.type == KEYDOWN: 
-                    if action.type == K_LEFT: 
+                    if action.type == K_SPACE: 
                         self.gamble(player)
 
-                elif action.type == K_RIGHT or temp_time == 0: 
+                elif action.type == K_INSERT or temp_time == 0: 
                     player.move_player_to_position(player.position + self.safe_route_increment)
 
             time.sleep(1)

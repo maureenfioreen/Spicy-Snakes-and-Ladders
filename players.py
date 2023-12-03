@@ -1,7 +1,8 @@
 import colors
 from mr305 import tile_size, border_distance_x, border_distance_y, screen, side_length
 from board import B
-from dice import render_dice
+from dice import Dice
+from messages import MessageDisplayer
 
 from pygame import draw
 from time import sleep 
@@ -24,9 +25,10 @@ class Player():
 
         # This is in order to render the dice dynamically
         self.dice_render_coords = dice_render_coords
-    
-    def __repr__(self):
-        return self.id
+        self.Dice = Dice(self.dice_render_coords)
+
+        # This is in order to render the messages correctly
+        self.MesageDisplayer = MessageDisplayer()
     
 
     def get_row_and_col_index(self, index):
@@ -83,7 +85,7 @@ class Player():
 
         sleep(0.15)
 
-
+# The player is able to move outside of the board -> FIX!!!!!!!! 
     def move_player_to_position(self, increment): 
         self.is_moving = True
         final_position = increment + self.position
@@ -93,13 +95,14 @@ class Player():
         while self.is_moving: 
             self.move_player_by_single_square(final_position)
             
-            if self.position == final_position or self.position == 1 or self.position == side_length**2:
+            if self.position == final_position or final_position <= 1 or final_position >= side_length**2:
                 self.is_moving = False
                 
                 sleep(2)
+                self.Dice.index = 0
                 return B.squares_list[f_col][f_row].perform_action(self)
             
             self.draw_player()
-            render_dice(self.dice_render_coords, increment)
+            self.Dice.render_dice(increment)
         
     
