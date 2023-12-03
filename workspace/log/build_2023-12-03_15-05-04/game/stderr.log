@@ -1,0 +1,13 @@
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:[m[K In member function ‘[01m[Kvoid ControllerPublisher::checkForSnakeOrLadder(int)[m[K’:
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:62:49:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+   62 |                                                 [01;31m[Kbreak[m[K;
+      |                                                 [01;31m[K^~~~~[m[K
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:75:41:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+   75 |                                         [01;31m[Kbreak[m[K;
+      |                                         [01;31m[K^~~~~[m[K
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:80:41:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+   80 |                                         [01;31m[Kbreak[m[K;
+      |                                         [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2
+gmake: *** [Makefile:146: all] Fehler 2

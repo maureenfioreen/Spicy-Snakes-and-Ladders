@@ -32,10 +32,12 @@ cdr_serialize(
   const game::msg::GameStateMsg & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: player_position
-  cdr << ros_message.player_position;
+  // Member: first_player_id
+  cdr << ros_message.first_player_id;
   // Member: dice_result
   cdr << ros_message.dice_result;
+  // Member: player_position
+  cdr << ros_message.player_position;
   // Member: game_message
   cdr << ros_message.game_message;
   return true;
@@ -47,11 +49,14 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   game::msg::GameStateMsg & ros_message)
 {
-  // Member: player_position
-  cdr >> ros_message.player_position;
+  // Member: first_player_id
+  cdr >> ros_message.first_player_id;
 
   // Member: dice_result
   cdr >> ros_message.dice_result;
+
+  // Member: player_position
+  cdr >> ros_message.player_position;
 
   // Member: game_message
   cdr >> ros_message.game_message;
@@ -72,15 +77,21 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: player_position
+  // Member: first_player_id
   {
-    size_t item_size = sizeof(ros_message.player_position);
+    size_t item_size = sizeof(ros_message.first_player_id);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // Member: dice_result
   {
     size_t item_size = sizeof(ros_message.dice_result);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: player_position
+  {
+    size_t item_size = sizeof(ros_message.player_position);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -110,7 +121,7 @@ max_serialized_size_GameStateMsg(
   is_plain = true;
 
 
-  // Member: player_position
+  // Member: first_player_id
   {
     size_t array_size = 1;
 
@@ -119,6 +130,14 @@ max_serialized_size_GameStateMsg(
   }
 
   // Member: dice_result
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: player_position
   {
     size_t array_size = 1;
 

@@ -1,0 +1,220 @@
+[0.000000] (-) TimerEvent: {}
+[0.000566] (game) JobQueued: {'identifier': 'game', 'dependencies': OrderedDict()}
+[0.000649] (game) JobStarted: {'identifier': 'game'}
+[0.040945] (game) JobProgress: {'identifier': 'game', 'progress': 'cmake'}
+[0.045589] (game) JobProgress: {'identifier': 'game', 'progress': 'build'}
+[0.046155] (game) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/g209/workspace/build/game', '--', '-j2', '-l2'], 'cwd': '/home/g209/workspace/build/game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'g209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/g209/workspace/install/game/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/g209'), ('OLDPWD', '/home/g209/workspace/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1622'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/g209/workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'g209'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'g209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu4ROS2:@/tmp/.ICE-unix/1597,unix/Ubuntu4ROS2:/tmp/.ICE-unix/1597'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/78fc29b2_053b_4e5b_9858_d02f707d215e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'de_DE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.WNCXE2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.136'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/g209/workspace/install/game:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/g209/workspace/build/game'), ('LC_ALL', 'de_DE.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/g209/workspace/install/game:/opt/ros/humble')]), 'shell': False}
+[0.097482] (-) TimerEvent: {}
+[0.181694] (game) StdoutLine: {'line': b'[  3%] Built target game__cpp\n'}
+[0.193041] (game) StdoutLine: {'line': b'[ 12%] Built target game__rosidl_generator_c\n'}
+[0.198112] (-) TimerEvent: {}
+[0.224730] (game) StdoutLine: {'line': b'[ 21%] Built target game__rosidl_typesupport_cpp\n'}
+[0.255936] (game) StdoutLine: {'line': b'[ 21%] Built target ament_cmake_python_copy_game\n'}
+[0.300696] (-) TimerEvent: {}
+[0.306489] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.311127] (game) StdoutLine: {'line': b'[ 30%] Built target game__rosidl_typesupport_fastrtps_c\n'}
+[0.337272] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_c\x1b[0m\n'}
+[0.346486] (game) StdoutLine: {'line': b'[ 39%] Built target game__rosidl_typesupport_introspection_c\n'}
+[0.381093] (game) StdoutLine: {'line': b'[ 48%] Built target game__rosidl_typesupport_c\n'}
+[0.410650] (-) TimerEvent: {}
+[0.442132] (game) StdoutLine: {'line': b'[ 60%] Built target game__rosidl_typesupport_fastrtps_cpp\n'}
+[0.451660] (game) StdoutLine: {'line': b'[ 66%] Built target game__rosidl_typesupport_introspection_cpp\n'}
+[0.472120] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target controller_publisher\x1b[0m\n'}
+[0.517448] (-) TimerEvent: {}
+[0.670214] (-) TimerEvent: {}
+[0.673285] (game) StdoutLine: {'line': b'running egg_info\n'}
+[0.673425] (game) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o\x1b[0m\n'}
+[0.675624] (game) StdoutLine: {'line': b'writing game.egg-info/PKG-INFO\n'}
+[0.677156] (game) StdoutLine: {'line': b'writing dependency_links to game.egg-info/dependency_links.txt\n'}
+[0.686215] (game) StdoutLine: {'line': b'writing top-level names to game.egg-info/top_level.txt\n'}
+[0.699683] (game) StdoutLine: {'line': b"reading manifest file 'game.egg-info/SOURCES.txt'\n"}
+[0.710553] (game) StdoutLine: {'line': b"writing manifest file 'game.egg-info/SOURCES.txt'\n"}
+[0.803511] (-) TimerEvent: {}
+[0.969008] (-) TimerEvent: {}
+[1.024557] (game) StdoutLine: {'line': b'[ 69%] Built target ament_cmake_python_build_game_egg\n'}
+[1.488876] (-) TimerEvent: {}
+[1.984480] (-) TimerEvent: {}
+[2.492898] (-) TimerEvent: {}
+[2.495729] (game) StdoutLine: {'line': b'[ 69%] Built target game\n'}
+[2.600012] (-) TimerEvent: {}
+[2.702301] (-) TimerEvent: {}
+[2.704056] (game) StdoutLine: {'line': b'[ 72%] Built target game__py\n'}
+[2.727925] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game__rosidl_generator_py\x1b[0m\n'}
+[2.754264] (game) StdoutLine: {'line': b'[ 78%] Built target game__rosidl_generator_py\n'}
+[2.798258] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.806934] (-) TimerEvent: {}
+[2.828243] (game) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/game__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/game/_game_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.924166] (-) TimerEvent: {}
+[3.027922] (-) TimerEvent: {}
+[3.044769] (game) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/game/game_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.128969] (-) TimerEvent: {}
+[3.130008] (game) StdoutLine: {'line': b'[ 84%] Built target game__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.270279] (-) TimerEvent: {}
+[3.296831] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.349965] (game) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/game__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/game/_game_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.483052] (-) TimerEvent: {}
+[3.583800] (-) TimerEvent: {}
+[3.686674] (-) TimerEvent: {}
+[3.691990] (game) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/game/game_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.773045] (game) StdoutLine: {'line': b'[ 90%] Built target game__rosidl_typesupport_introspection_c__pyext\n'}
+[3.787221] (-) TimerEvent: {}
+[3.833578] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.887472] (-) TimerEvent: {}
+[3.916613] (game) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/game__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/game/_game_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.992831] (-) TimerEvent: {}
+[4.069796] (game) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/game/game_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.094116] (-) TimerEvent: {}
+[4.166996] (game) StdoutLine: {'line': b'[ 96%] Built target game__rosidl_typesupport_c__pyext\n'}
+[4.197894] (-) TimerEvent: {}
+[4.305492] (-) TimerEvent: {}
+[4.405918] (-) TimerEvent: {}
+[4.508670] (-) TimerEvent: {}
+[4.613607] (-) TimerEvent: {}
+[4.629041] (game) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable controller_publisher\x1b[0m\n'}
+[4.714024] (-) TimerEvent: {}
+[4.788535] (game) StdoutLine: {'line': b'[100%] Built target controller_publisher\n'}
+[4.814161] (-) TimerEvent: {}
+[4.818215] (game) CommandEnded: {'returncode': 0}
+[4.914323] (-) TimerEvent: {}
+[4.979880] (game) JobProgress: {'identifier': 'game', 'progress': 'install'}
+[4.990607] (game) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/g209/workspace/build/game'], 'cwd': '/home/g209/workspace/build/game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'g209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/g209/workspace/install/game/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/g209'), ('OLDPWD', '/home/g209/workspace/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1622'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/g209/workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'g209'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'g209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu4ROS2:@/tmp/.ICE-unix/1597,unix/Ubuntu4ROS2:/tmp/.ICE-unix/1597'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/78fc29b2_053b_4e5b_9858_d02f707d215e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'de_DE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.WNCXE2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.136'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/g209/workspace/install/game:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/g209/workspace/build/game'), ('LC_ALL', 'de_DE.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/g209/workspace/install/game:/opt/ros/humble')]), 'shell': False}
+[4.999344] (game) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.999835] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/ament_index/resource_index/rosidl_interfaces/game\n'}
+[5.000236] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game\n'}
+[5.000595] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg\n'}
+[5.001022] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail\n'}
+[5.002104] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__struct.h\n'}
+[5.003015] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__functions.c\n'}
+[5.003893] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__functions.h\n'}
+[5.004768] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__type_support.h\n'}
+[5.006340] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.006426] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/game_state_msg.h\n'}
+[5.007066] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/environment/library_path.sh\n'}
+[5.007500] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/share/game/environment/library_path.dsv\n'}
+[5.008800] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/libgame__rosidl_generator_c.so\n'}
+[5.010151] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/libgame__rosidl_generator_c.so" to ""\n'}
+[5.010666] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game\n'}
+[5.011083] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg\n'}
+[5.011446] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail\n'}
+[5.011823] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[5.012802] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.013373] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_fastrtps_c.so\n'}
+[5.014520] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.014651] (-) TimerEvent: {}
+[5.015091] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game\n'}
+[5.015397] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg\n'}
+[5.015711] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail\n'}
+[5.016027] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__type_support.c\n'}
+[5.017045] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__rosidl_typesupport_introspection_c.h\n'}
+[5.018095] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.018851] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_introspection_c.so\n'}
+[5.019351] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.019943] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_c.so\n'}
+[5.020483] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_c.so" to ""\n'}
+[5.020784] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game\n'}
+[5.020860] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg\n'}
+[5.021177] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail\n'}
+[5.021446] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__traits.hpp\n'}
+[5.022352] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__builder.hpp\n'}
+[5.022886] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__struct.hpp\n'}
+[5.022944] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/game_state_msg.hpp\n'}
+[5.022993] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game\n'}
+[5.023307] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg\n'}
+[5.023910] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail\n'}
+[5.024335] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.024614] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/dds_fastrtps\n'}
+[5.024921] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.025478] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.026208] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.026292] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game\n'}
+[5.026343] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg\n'}
+[5.026644] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail\n'}
+[5.026915] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__type_support.cpp\n'}
+[5.027312] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.027881] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_introspection_cpp.so\n'}
+[5.028777] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.034020] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_cpp.so\n'}
+[5.034583] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_cpp.so" to ""\n'}
+[5.034711] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/environment/pythonpath.sh\n'}
+[5.034799] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/share/game/environment/pythonpath.dsv\n'}
+[5.035442] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info\n'}
+[5.035538] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.036827] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.037135] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.037560] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.046394] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game\n'}
+[5.046589] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/_game_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.046657] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg\n'}
+[5.046702] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg/__init__.py\n'}
+[5.046746] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg/_game_state_msg.py\n'}
+[5.046786] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg/_game_state_msg_s.c\n'}
+[5.046864] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.046916] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/_game_s.ep.rosidl_typesupport_c.c\n'}
+[5.046980] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/__init__.py\n'}
+[5.047023] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.047067] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/libgame__rosidl_generator_py.so\n'}
+[5.047107] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.047145] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/_game_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.116454] (-) TimerEvent: {}
+[5.116896] (game) StdoutLine: {'line': b"Listing '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game'...\n"}
+[5.117098] (game) StdoutLine: {'line': b"Compiling '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/__init__.py'...\n"}
+[5.117232] (game) StdoutLine: {'line': b"Listing '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg'...\n"}
+[5.117313] (game) StdoutLine: {'line': b"Compiling '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg/__init__.py'...\n"}
+[5.117370] (game) StdoutLine: {'line': b"Compiling '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg/_game_state_msg.py'...\n"}
+[5.121977] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.122326] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.122571] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.122893] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.123137] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.123470] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.123877] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/libgame__rosidl_generator_py.so\n'}
+[5.124443] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/libgame__rosidl_generator_py.so" to ""\n'}
+[5.124536] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/share/game/msg/GameStateMsg.idl\n'}
+[5.124748] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/share/game/msg/GameStateMsg.msg\n'}
+[5.125156] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/lib/game/controller_publisher\n'}
+[5.127101] (game) StdoutLine: {'line': b'-- Set runtime path of "/home/g209/workspace/install/game/lib/game/controller_publisher" to ""\n'}
+[5.127206] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/ament_index/resource_index/package_run_dependencies/game\n'}
+[5.127272] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/ament_index/resource_index/parent_prefix_path/game\n'}
+[5.127569] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/environment/ament_prefix_path.sh\n'}
+[5.127979] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/share/game/environment/ament_prefix_path.dsv\n'}
+[5.128116] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/environment/path.sh\n'}
+[5.128154] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/share/game/environment/path.dsv\n'}
+[5.128188] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/local_setup.bash\n'}
+[5.128220] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/local_setup.sh\n'}
+[5.128252] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/local_setup.zsh\n'}
+[5.128285] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/share/game/local_setup.dsv\n'}
+[5.128561] (game) StdoutLine: {'line': b'-- Installing: /home/g209/workspace/install/game/share/game/package.dsv\n'}
+[5.129081] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/ament_index/resource_index/packages/game\n'}
+[5.129475] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_cExport.cmake\n'}
+[5.129547] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.130290] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.130357] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.130492] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.130622] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.130756] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_cExport.cmake\n'}
+[5.130853] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.130930] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_cppExport.cmake\n'}
+[5.131058] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.131099] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.132279] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.132321] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.132353] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_cppExport.cmake\n'}
+[5.132385] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.132416] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_pyExport.cmake\n'}
+[5.132447] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.132482] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/rosidl_cmake-extras.cmake\n'}
+[5.132512] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.132542] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.132572] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.132602] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.132632] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.132662] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.132691] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/gameConfig.cmake\n'}
+[5.132725] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/gameConfig-version.cmake\n'}
+[5.132755] (game) StdoutLine: {'line': b'-- Up-to-date: /home/g209/workspace/install/game/share/game/package.xml\n'}
+[5.139326] (game) CommandEnded: {'returncode': 0}
+[5.220451] (-) TimerEvent: {}
+[5.321948] (-) TimerEvent: {}
+[5.422621] (-) TimerEvent: {}
+[5.486306] (game) JobEnded: {'identifier': 'game', 'rc': 0}
+[5.488496] (-) EventReactorShutdown: {}

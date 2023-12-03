@@ -1,0 +1,42 @@
+[0.069s] Invoking command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/g209/Spicy-Snakes-and-Ladders/snakes_and_ladders -DCMAKE_INSTALL_PREFIX=/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders
+[0.270s] -- The C compiler identification is GNU 11.4.0
+[0.448s] -- The CXX compiler identification is GNU 11.4.0
+[0.457s] -- Detecting C compiler ABI info
+[0.562s] -- Detecting C compiler ABI info - done
+[0.566s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.568s] -- Detecting C compile features
+[0.570s] -- Detecting C compile features - done
+[0.573s] -- Detecting CXX compiler ABI info
+[0.673s] -- Detecting CXX compiler ABI info - done
+[0.678s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.678s] -- Detecting CXX compile features
+[0.678s] -- Detecting CXX compile features - done
+[0.685s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.849s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.923s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.004s] -- Added test 'lint_cmake' to check CMake code style
+[1.006s] -- Added test 'xmllint' to check XML markup files
+[1.009s] -- Configuring done
+[1.010s] -- Generating done
+[1.011s] -- Build files have been written to: /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders
+[1.016s] Invoked command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/g209/Spicy-Snakes-and-Ladders/snakes_and_ladders -DCMAKE_INSTALL_PREFIX=/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders
+[1.017s] Invoking command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders -- -j2 -l2
+[1.058s] Invoked command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders -- -j2 -l2
+[1.095s] Invoking command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders
+[1.101s] -- Install configuration: ""
+[1.102s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/ament_index/resource_index/package_run_dependencies/snakes_and_ladders
+[1.102s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/ament_index/resource_index/parent_prefix_path/snakes_and_ladders
+[1.103s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/environment/ament_prefix_path.sh
+[1.103s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/environment/ament_prefix_path.dsv
+[1.103s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/environment/path.sh
+[1.104s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/environment/path.dsv
+[1.104s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/local_setup.bash
+[1.105s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/local_setup.sh
+[1.105s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/local_setup.zsh
+[1.105s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/local_setup.dsv
+[1.105s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/package.dsv
+[1.106s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/ament_index/resource_index/packages/snakes_and_ladders
+[1.106s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/cmake/snakes_and_laddersConfig.cmake
+[1.106s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/cmake/snakes_and_laddersConfig-version.cmake
+[1.107s] -- Installing: /home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/package.xml
+[1.112s] Invoked command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders

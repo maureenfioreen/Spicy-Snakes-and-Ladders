@@ -53,13 +53,13 @@ bool game__msg__game_state_msg__convert_from_py(PyObject * _pymsg, void * _ros_m
     assert(strncmp("game.msg._game_state_msg.GameStateMsg", full_classname_dest, 37) == 0);
   }
   game__msg__GameStateMsg * ros_message = _ros_message;
-  {  // player_position
-    PyObject * field = PyObject_GetAttrString(_pymsg, "player_position");
+  {  // first_player_id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "first_player_id");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->player_position = (int32_t)PyLong_AsLong(field);
+    ros_message->first_player_id = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // dice_result
@@ -69,6 +69,15 @@ bool game__msg__game_state_msg__convert_from_py(PyObject * _pymsg, void * _ros_m
     }
     assert(PyLong_Check(field));
     ros_message->dice_result = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // player_position
+    PyObject * field = PyObject_GetAttrString(_pymsg, "player_position");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->player_position = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // game_message
@@ -108,11 +117,11 @@ PyObject * game__msg__game_state_msg__convert_to_py(void * raw_ros_message)
     }
   }
   game__msg__GameStateMsg * ros_message = (game__msg__GameStateMsg *)raw_ros_message;
-  {  // player_position
+  {  // first_player_id
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->player_position);
+    field = PyLong_FromLong(ros_message->first_player_id);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "player_position", field);
+      int rc = PyObject_SetAttrString(_pymessage, "first_player_id", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -124,6 +133,17 @@ PyObject * game__msg__game_state_msg__convert_to_py(void * raw_ros_message)
     field = PyLong_FromLong(ros_message->dice_result);
     {
       int rc = PyObject_SetAttrString(_pymessage, "dice_result", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // player_position
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->player_position);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "player_position", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

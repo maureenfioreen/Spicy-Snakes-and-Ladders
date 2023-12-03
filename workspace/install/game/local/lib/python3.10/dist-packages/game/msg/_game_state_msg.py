@@ -55,18 +55,21 @@ class GameStateMsg(metaclass=Metaclass_GameStateMsg):
     """Message class 'GameStateMsg'."""
 
     __slots__ = [
-        '_player_position',
+        '_first_player_id',
         '_dice_result',
+        '_player_position',
         '_game_message',
     ]
 
     _fields_and_field_types = {
-        'player_position': 'int32',
+        'first_player_id': 'int32',
         'dice_result': 'int32',
+        'player_position': 'int32',
         'game_message': 'string',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
@@ -76,8 +79,9 @@ class GameStateMsg(metaclass=Metaclass_GameStateMsg):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.player_position = kwargs.get('player_position', int())
+        self.first_player_id = kwargs.get('first_player_id', int())
         self.dice_result = kwargs.get('dice_result', int())
+        self.player_position = kwargs.get('player_position', int())
         self.game_message = kwargs.get('game_message', str())
 
     def __repr__(self):
@@ -109,9 +113,11 @@ class GameStateMsg(metaclass=Metaclass_GameStateMsg):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.player_position != other.player_position:
+        if self.first_player_id != other.first_player_id:
             return False
         if self.dice_result != other.dice_result:
+            return False
+        if self.player_position != other.player_position:
             return False
         if self.game_message != other.game_message:
             return False
@@ -123,19 +129,19 @@ class GameStateMsg(metaclass=Metaclass_GameStateMsg):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def player_position(self):
-        """Message field 'player_position'."""
-        return self._player_position
+    def first_player_id(self):
+        """Message field 'first_player_id'."""
+        return self._first_player_id
 
-    @player_position.setter
-    def player_position(self, value):
+    @first_player_id.setter
+    def first_player_id(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'player_position' field must be of type 'int'"
+                "The 'first_player_id' field must be of type 'int'"
             assert value >= -2147483648 and value < 2147483648, \
-                "The 'player_position' field must be an integer in [-2147483648, 2147483647]"
-        self._player_position = value
+                "The 'first_player_id' field must be an integer in [-2147483648, 2147483647]"
+        self._first_player_id = value
 
     @builtins.property
     def dice_result(self):
@@ -151,6 +157,21 @@ class GameStateMsg(metaclass=Metaclass_GameStateMsg):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'dice_result' field must be an integer in [-2147483648, 2147483647]"
         self._dice_result = value
+
+    @builtins.property
+    def player_position(self):
+        """Message field 'player_position'."""
+        return self._player_position
+
+    @player_position.setter
+    def player_position(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'player_position' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'player_position' field must be an integer in [-2147483648, 2147483647]"
+        self._player_position = value
 
     @builtins.property
     def game_message(self):

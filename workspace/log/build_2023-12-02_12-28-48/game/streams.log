@@ -1,0 +1,148 @@
+[0.065s] Invoking command in '/home/g209/workspace/build/game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/g209/workspace/build/game -- -j2 -l2
+[0.387s] [  3%] Built target game__cpp
+[0.395s] [ 12%] Built target game__rosidl_generator_c
+[0.455s] [ 12%] Built target ament_cmake_python_copy_game
+[0.484s] [ 21%] Built target game__rosidl_typesupport_cpp
+[0.504s] [ 30%] Built target game__rosidl_typesupport_fastrtps_c
+[0.521s] [ 39%] Built target game__rosidl_typesupport_introspection_c
+[0.570s] [ 48%] Built target game__rosidl_typesupport_c
+[0.577s] [ 57%] Built target game__rosidl_typesupport_fastrtps_cpp
+[0.607s] [ 66%] Built target game__rosidl_typesupport_introspection_cpp
+[0.650s] [35m[1mConsolidate compiler generated dependencies of target controller_publisher[0m
+[0.753s] [ 69%] [32mBuilding CXX object CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o[0m
+[0.927s] running egg_info
+[0.928s] writing game.egg-info/PKG-INFO
+[0.930s] writing dependency_links to game.egg-info/dependency_links.txt
+[0.930s] writing top-level names to game.egg-info/top_level.txt
+[0.953s] reading manifest file 'game.egg-info/SOURCES.txt'
+[0.953s] writing manifest file 'game.egg-info/SOURCES.txt'
+[0.967s] [ 69%] Built target ament_cmake_python_build_game_egg
+[1.010s] [ 69%] Built target game
+[1.083s] [ 72%] Built target game__py
+[1.148s] [ 78%] Built target game__rosidl_generator_py
+[1.206s] [ 84%] Built target game__rosidl_typesupport_fastrtps_c__pyext
+[1.260s] [ 90%] Built target game__rosidl_typesupport_introspection_c__pyext
+[1.311s] [ 96%] Built target game__rosidl_typesupport_c__pyext
+[5.540s] [100%] [32m[1mLinking CXX executable controller_publisher[0m
+[5.858s] [100%] Built target controller_publisher
+[5.870s] Invoked command in '/home/g209/workspace/build/game' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/g209/workspace/build/game -- -j2 -l2
+[6.029s] Invoking command in '/home/g209/workspace/build/game': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/g209/workspace/build/game
+[6.045s] -- Install configuration: ""
+[6.048s] -- Up-to-date: /home/g209/workspace/install/game/share/ament_index/resource_index/rosidl_interfaces/game
+[6.048s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game
+[6.049s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg
+[6.049s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail
+[6.049s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__struct.h
+[6.049s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__functions.c
+[6.049s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__functions.h
+[6.049s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__type_support.h
+[6.049s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/rosidl_generator_c__visibility_control.h
+[6.050s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/game_state_msg.h
+[6.050s] -- Up-to-date: /home/g209/workspace/install/game/share/game/environment/library_path.sh
+[6.050s] -- Up-to-date: /home/g209/workspace/install/game/share/game/environment/library_path.dsv
+[6.051s] -- Up-to-date: /home/g209/workspace/install/game/lib/libgame__rosidl_generator_c.so
+[6.052s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game
+[6.052s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg
+[6.052s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail
+[6.052s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__rosidl_typesupport_fastrtps_c.h
+[6.052s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.053s] -- Up-to-date: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_fastrtps_c.so
+[6.054s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game
+[6.054s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg
+[6.054s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail
+[6.054s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__type_support.c
+[6.055s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__rosidl_typesupport_introspection_c.h
+[6.055s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.055s] -- Up-to-date: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_introspection_c.so
+[6.056s] -- Up-to-date: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_c.so
+[6.057s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game
+[6.057s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg
+[6.057s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail
+[6.057s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__traits.hpp
+[6.057s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__builder.hpp
+[6.057s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__struct.hpp
+[6.057s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/game_state_msg.hpp
+[6.058s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game
+[6.058s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg
+[6.058s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail
+[6.058s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[6.058s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/dds_fastrtps
+[6.058s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.060s] -- Up-to-date: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_fastrtps_cpp.so
+[6.060s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game
+[6.061s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg
+[6.061s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail
+[6.061s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__type_support.cpp
+[6.061s] -- Up-to-date: /home/g209/workspace/install/game/include/game/game/msg/detail/game_state_msg__rosidl_typesupport_introspection_cpp.hpp
+[6.062s] -- Up-to-date: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_introspection_cpp.so
+[6.063s] -- Up-to-date: /home/g209/workspace/install/game/lib/libgame__rosidl_typesupport_cpp.so
+[6.063s] -- Up-to-date: /home/g209/workspace/install/game/share/game/environment/pythonpath.sh
+[6.063s] -- Up-to-date: /home/g209/workspace/install/game/share/game/environment/pythonpath.dsv
+[6.065s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info
+[6.066s] -- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info/SOURCES.txt
+[6.066s] -- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info/PKG-INFO
+[6.066s] -- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info/top_level.txt
+[6.066s] -- Installing: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game-0.0.0-py3.10.egg-info/dependency_links.txt
+[6.066s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game
+[6.067s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/_game_s.ep.rosidl_typesupport_introspection_c.c
+[6.067s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg
+[6.068s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg/__init__.py
+[6.068s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg/_game_state_msg.py
+[6.068s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg/_game_state_msg_s.c
+[6.068s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.068s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/_game_s.ep.rosidl_typesupport_c.c
+[6.069s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/__init__.py
+[6.069s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.069s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/libgame__rosidl_generator_py.so
+[6.069s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.069s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/_game_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.100s] Listing '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game'...
+[6.100s] Listing '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/msg'...
+[6.105s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.107s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.107s] -- Up-to-date: /home/g209/workspace/install/game/local/lib/python3.10/dist-packages/game/game_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.108s] -- Up-to-date: /home/g209/workspace/install/game/lib/libgame__rosidl_generator_py.so
+[6.109s] -- Up-to-date: /home/g209/workspace/install/game/share/game/msg/GameStateMsg.idl
+[6.110s] -- Up-to-date: /home/g209/workspace/install/game/share/game/msg/GameStateMsg.msg
+[6.110s] -- Installing: /home/g209/workspace/install/game/lib/game/controller_publisher
+[6.111s] -- Set runtime path of "/home/g209/workspace/install/game/lib/game/controller_publisher" to ""
+[6.111s] -- Up-to-date: /home/g209/workspace/install/game/share/ament_index/resource_index/package_run_dependencies/game
+[6.113s] -- Up-to-date: /home/g209/workspace/install/game/share/ament_index/resource_index/parent_prefix_path/game
+[6.113s] -- Up-to-date: /home/g209/workspace/install/game/share/game/environment/ament_prefix_path.sh
+[6.113s] -- Up-to-date: /home/g209/workspace/install/game/share/game/environment/ament_prefix_path.dsv
+[6.113s] -- Up-to-date: /home/g209/workspace/install/game/share/game/environment/path.sh
+[6.113s] -- Up-to-date: /home/g209/workspace/install/game/share/game/environment/path.dsv
+[6.113s] -- Up-to-date: /home/g209/workspace/install/game/share/game/local_setup.bash
+[6.113s] -- Up-to-date: /home/g209/workspace/install/game/share/game/local_setup.sh
+[6.113s] -- Up-to-date: /home/g209/workspace/install/game/share/game/local_setup.zsh
+[6.114s] -- Up-to-date: /home/g209/workspace/install/game/share/game/local_setup.dsv
+[6.114s] -- Installing: /home/g209/workspace/install/game/share/game/package.dsv
+[6.115s] -- Up-to-date: /home/g209/workspace/install/game/share/ament_index/resource_index/packages/game
+[6.133s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_cExport.cmake
+[6.133s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_cExport-noconfig.cmake
+[6.136s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_typesupport_fastrtps_cExport.cmake
+[6.136s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.137s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_introspection_cExport.cmake
+[6.137s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.138s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_cExport.cmake
+[6.138s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_cExport-noconfig.cmake
+[6.139s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_cppExport.cmake
+[6.141s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.141s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.144s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_introspection_cppExport.cmake
+[6.144s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.145s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_cppExport.cmake
+[6.145s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/game__rosidl_typesupport_cppExport-noconfig.cmake
+[6.146s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_pyExport.cmake
+[6.146s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/export_game__rosidl_generator_pyExport-noconfig.cmake
+[6.146s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/rosidl_cmake-extras.cmake
+[6.146s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.147s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/ament_cmake_export_libraries-extras.cmake
+[6.147s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/ament_cmake_export_targets-extras.cmake
+[6.147s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.147s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.147s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.147s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/gameConfig.cmake
+[6.147s] -- Up-to-date: /home/g209/workspace/install/game/share/game/cmake/gameConfig-version.cmake
+[6.147s] -- Up-to-date: /home/g209/workspace/install/game/share/game/package.xml
+[6.155s] Invoked command in '/home/g209/workspace/build/game' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/g209/workspace/build/game

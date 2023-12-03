@@ -1,0 +1,7 @@
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:[m[K In member function ‘[01m[Kvoid ControllerPublisher::receivedData(const GameStateMsg&) const[m[K’:
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:118:62:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[Kgame::msg::GameStateMsg_<std::allocator<void> >::player_position[m[K’ in read-only object
+  118 |                                 [01;31m[Kplayer_state.player_position = player.player_position[m[K;
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2
+gmake: *** [Makefile:146: all] Fehler 2

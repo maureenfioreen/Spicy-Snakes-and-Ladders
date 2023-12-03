@@ -1,0 +1,490 @@
+[0.000000] (-) TimerEvent: {}
+[0.000637] (game) JobQueued: {'identifier': 'game', 'dependencies': OrderedDict()}
+[0.001094] (game) JobStarted: {'identifier': 'game'}
+[0.069646] (game) JobProgress: {'identifier': 'game', 'progress': 'cmake'}
+[0.074403] (game) JobProgress: {'identifier': 'game', 'progress': 'build'}
+[0.074527] (game) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/g209/workspace/build/game', '--', '-j2', '-l2'], 'cwd': '/home/g209/workspace/build/game', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'g209'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/g209/workspace/install/game/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/g209'), ('OLDPWD', '/home/g209/workspace/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1622'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/g209/workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'g209'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'g209'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu4ROS2:@/tmp/.ICE-unix/1597,unix/Ubuntu4ROS2:/tmp/.ICE-unix/1597'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/78fc29b2_053b_4e5b_9858_d02f707d215e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'de_DE.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.WNCXE2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.136'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/g209/workspace/install/game:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/g209/workspace/build/game'), ('LC_ALL', 'de_DE.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/g209/workspace/install/game/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/g209/workspace/install/game:/opt/ros/humble')]), 'shell': False}
+[0.099278] (-) TimerEvent: {}
+[0.197711] (game) StdoutLine: {'line': b'[  3%] Built target game__cpp\n'}
+[0.199375] (-) TimerEvent: {}
+[0.199889] (game) StdoutLine: {'line': b'[ 12%] Built target game__rosidl_generator_c\n'}
+[0.237009] (game) StdoutLine: {'line': b'[ 21%] Built target game__rosidl_typesupport_cpp\n'}
+[0.253909] (game) StdoutLine: {'line': b'[ 21%] Built target ament_cmake_python_copy_game\n'}
+[0.278354] (game) StdoutLine: {'line': b'[ 30%] Built target game__rosidl_typesupport_fastrtps_c\n'}
+[0.283995] (game) StdoutLine: {'line': b'[ 39%] Built target game__rosidl_typesupport_introspection_c\n'}
+[0.300349] (-) TimerEvent: {}
+[0.312488] (game) StdoutLine: {'line': b'[ 48%] Built target game__rosidl_typesupport_c\n'}
+[0.323471] (game) StdoutLine: {'line': b'[ 57%] Built target game__rosidl_typesupport_fastrtps_cpp\n'}
+[0.391263] (game) StdoutLine: {'line': b'[ 66%] Built target game__rosidl_typesupport_introspection_cpp\n'}
+[0.401307] (-) TimerEvent: {}
+[0.419957] (game) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target controller_publisher\x1b[0m\n'}
+[0.454024] (game) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o\x1b[0m\n'}
+[0.931418] (-) TimerEvent: {}
+[1.035536] (-) TimerEvent: {}
+[1.038455] (game) StdoutLine: {'line': b'running egg_info\n'}
+[1.040822] (game) StdoutLine: {'line': b'writing game.egg-info/PKG-INFO\n'}
+[1.043348] (game) StdoutLine: {'line': b'writing dependency_links to game.egg-info/dependency_links.txt\n'}
+[1.047893] (game) StdoutLine: {'line': b'writing top-level names to game.egg-info/top_level.txt\n'}
+[1.049187] (game) StdoutLine: {'line': b"reading manifest file 'game.egg-info/SOURCES.txt'\n"}
+[1.052252] (game) StdoutLine: {'line': b"writing manifest file 'game.egg-info/SOURCES.txt'\n"}
+[1.433485] (-) TimerEvent: {}
+[1.548290] (-) TimerEvent: {}
+[1.569040] (game) StdoutLine: {'line': b'[ 69%] Built target ament_cmake_python_build_game_egg\n'}
+[1.652225] (-) TimerEvent: {}
+[1.704786] (game) StdoutLine: {'line': b'[ 69%] Built target game\n'}
+[1.753408] (-) TimerEvent: {}
+[1.863432] (-) TimerEvent: {}
+[1.929092] (game) StdoutLine: {'line': b'[ 72%] Built target game__py\n'}
+[1.965719] (-) TimerEvent: {}
+[2.148296] (game) StdoutLine: {'line': b'[ 78%] Built target game__rosidl_generator_py\n'}
+[2.148479] (-) TimerEvent: {}
+[2.593032] (-) TimerEvent: {}
+[2.689233] (game) StdoutLine: {'line': b'[ 84%] Built target game__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.693837] (-) TimerEvent: {}
+[2.723863] (game) StdoutLine: {'line': b'[ 90%] Built target game__rosidl_typesupport_introspection_c__pyext\n'}
+[2.747139] (game) StdoutLine: {'line': b'[ 96%] Built target game__rosidl_typesupport_c__pyext\n'}
+[2.806417] (-) TimerEvent: {}
+[2.811196] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ControllerPublisher::checkForSnakeOrLadder(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.812137] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator>>\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::istream\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<char>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.812851] (game) StderrLine: {'line': b'   60 |                                         \x1b[32m\x1b[Kstd::cin\x1b[m\x1b[K \x1b[01;31m\x1b[K>>\x1b[m\x1b[K \x1b[34m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.813621] (game) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[K~~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^~\x1b[m\x1b[K \x1b[34m\x1b[K~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.814029] (game) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K|\x1b[m\x1b[K      \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[2.814073] (game) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K|\x1b[m\x1b[K      \x1b[34m\x1b[Kconst char [14]\x1b[m\x1b[K\n'}
+[2.814104] (game) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[Kstd::istream {aka std::basic_istream<char>}\x1b[m\x1b[K\n'}
+[2.830406] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.831211] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.831630] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:168:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.831986] (game) StderrLine: {'line': b'  168 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(bool& __n)\n'}
+[2.832316] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.832805] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:168:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.833351] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind non-const lvalue reference of type \xe2\x80\x98\x1b[01m\x1b[Kbool&\x1b[m\x1b[K\xe2\x80\x99 to a value of type \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.833780] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.834100] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.834559] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.834884] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.835295] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:172:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.835656] (game) StderrLine: {'line': b'  172 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(short& __n);\n'}
+[2.836023] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.836353] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:172:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.837944] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshort int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.838330] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.838668] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.838972] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.839260] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[2.839658] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(short int)((const char*)"Your choice: ")\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshort int&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.840131] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.840229] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.840321] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:175:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.841051] (game) StderrLine: {'line': b'  175 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(unsigned short& __n)\n'}
+[2.841151] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.841244] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:175:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.841403] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshort unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.841502] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.841578] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.841650] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.843000] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[2.843112] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(short unsigned int)((const char*)"Your choice: ")\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshort unsigned int&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.843225] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.843302] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.843410] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:179:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.843521] (game) StderrLine: {'line': b'  179 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(int& __n);\n'}
+[2.843594] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.843674] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:179:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.843774] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.843892] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.843965] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.844036] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.844105] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[2.844192] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(int)((const char*)"Your choice: ")\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.844303] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.844389] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.844465] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:182:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.844538] (game) StderrLine: {'line': b'  182 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(unsigned int& __n)\n'}
+[2.844607] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.844685] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:182:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.844780] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.844855] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.844924] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.849439] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.849604] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[2.849706] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(unsigned int)((const char*)"Your choice: ")\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kunsigned int&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.849854] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.849936] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.850013] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:186:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.850093] (game) StderrLine: {'line': b'  186 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(long& __n)\n'}
+[2.850166] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.850244] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:186:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.850345] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.850423] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.850494] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.850563] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.850633] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[2.850777] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(long int)((const char*)"Your choice: ")\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong int&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.850894] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.850973] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.851048] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:190:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.851123] (game) StderrLine: {'line': b'  190 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(unsigned long& __n)\n'}
+[2.851193] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.851269] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:190:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.851390] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.851504] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.851581] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.851653] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.851755] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[2.851851] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(long unsigned int)((const char*)"Your choice: ")\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.851957] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.852035] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.852111] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:195:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.852190] (game) StderrLine: {'line': b'  195 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(long long& __n)\n'}
+[2.852262] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.852339] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:195:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.852442] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong long int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.852524] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.852597] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.852686] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.852772] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[2.852861] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(long long int)((const char*)"Your choice: ")\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong long int&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.852962] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.853039] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.853121] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:199:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.853199] (game) StderrLine: {'line': b'  199 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(unsigned long long& __n)\n'}
+[2.853271] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.853349] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:199:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.853443] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong long unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.853519] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.853589] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.853680] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.853762] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[2.853850] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(long long unsigned int)((const char*)"Your choice: ")\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong long unsigned int&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.853962] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.854040] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.854116] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:235:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[2.854188] (game) StderrLine: {'line': b'  235 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(void*& __p)\n'}
+[2.854258] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.854337] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:235:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[2.854435] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst void*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvoid*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.854512] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;31m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.854590] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.855011] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.855073] (game) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[Kconst void*\x1b[m\x1b[K\n'}
+[2.855117] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind rvalue \xe2\x80\x98\x1b[01m\x1b[K(void*)((const void*)((const char*)"Your choice: "))\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvoid*&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.855158] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.855198] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.855237] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:120:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.855279] (game) StderrLine: {'line': b'  120 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(__istream_type& (*__pf)(__istream_type&))\n'}
+[2.855319] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.856325] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:120:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<char>& (*)(std::basic_istream<char>&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.856438] (game) StderrLine: {'line': b'  120 |       operator>>(\x1b[01;36m\x1b[K__istream_type& (*__pf)(__istream_type&)\x1b[m\x1b[K)\n'}
+[2.856497] (game) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.856541] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:124:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.856619] (game) StderrLine: {'line': b'  124 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(__ios_type& (*__pf)(__ios_type&))\n'}
+[2.856665] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.856706] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:124:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.856749] (game) StderrLine: {'line': b'  124 |       operator>>(\x1b[01;36m\x1b[K__ios_type& (*__pf)(__ios_type&)\x1b[m\x1b[K)\n'}
+[2.856826] (game) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.856872] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:131:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.856920] (game) StderrLine: {'line': b'  131 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(ios_base& (*__pf)(ios_base&))\n'}
+[2.856961] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.857000] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:131:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::ios_base& (*)(std::ios_base&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857040] (game) StderrLine: {'line': b'  131 |       operator>>(\x1b[01;36m\x1b[Kios_base& (*__pf)(ios_base&)\x1b[m\x1b[K)\n'}
+[2.857079] (game) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.857117] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:214:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857157] (game) StderrLine: {'line': b'  214 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(float& __f)\n'}
+[2.857200] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.857241] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:214:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857280] (game) StderrLine: {'line': b'  214 |       operator>>(\x1b[01;36m\x1b[Kfloat& __f\x1b[m\x1b[K)\n'}
+[2.857320] (game) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.857360] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:218:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857401] (game) StderrLine: {'line': b'  218 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(double& __f)\n'}
+[2.857439] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.857476] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:218:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kdouble&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857515] (game) StderrLine: {'line': b'  218 |       operator>>(\x1b[01;36m\x1b[Kdouble& __f\x1b[m\x1b[K)\n'}
+[2.857554] (game) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.857596] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:222:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857670] (game) StderrLine: {'line': b'  222 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(long double& __f)\n'}
+[2.857713] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.857754] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:222:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong double&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857795] (game) StderrLine: {'line': b'  222 |       operator>>(\x1b[01;36m\x1b[Klong double& __f\x1b[m\x1b[K)\n'}
+[2.857833] (game) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.857871] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:259:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857914] (game) StderrLine: {'line': b'  259 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(__streambuf_type* __sb);\n'}
+[2.857953] (game) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.857990] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:259:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_istream<char>::__streambuf_type*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_streambuf<char>*\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.858030] (game) StderrLine: {'line': b'  259 |       operator>>(\x1b[01;36m\x1b[K__streambuf_type* __sb\x1b[m\x1b[K);\n'}
+[2.858102] (game) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.864449] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:56\x1b[m\x1b[K,\n'}
+[2.864594] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:1\x1b[m\x1b[K:\n'}
+[2.864660] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1485:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.864713] (game) StderrLine: {'line': b' 1485 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __in,\n'}
+[2.864760] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.864804] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1485:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.864850] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.865049] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.865105] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.865160] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/istream:1016\x1b[m\x1b[K,\n'}
+[2.865204] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.865248] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.865296] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/istream.tcc:958:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.865343] (game) StderrLine: {'line': b'  958 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)\n'}
+[2.865388] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.865431] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/istream.tcc:958:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.865474] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_CharT\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.865523] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.865566] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.865607] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.865649] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.865692] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:756:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.865736] (game) StderrLine: {'line': b'  756 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<char, _Traits>& __in, unsigned char& __c)\n'}
+[2.865779] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.865822] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:756:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.865879] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kunsigned char&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.865934] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.865981] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.866026] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.866069] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.866118] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:761:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.866162] (game) StderrLine: {'line': b'  761 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<char, _Traits>& __in, signed char& __c)\n'}
+[2.866205] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.866248] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:761:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.866292] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Ksigned char&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.880700] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.896035] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.896102] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.896137] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.896170] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:803:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.896202] (game) StderrLine: {'line': b'  803 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)\n'}
+[2.896232] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.896261] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:803:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.896291] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_CharT\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst char\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.896320] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.896360] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.896388] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.896415] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.896443] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:846:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.896475] (game) StderrLine: {'line': b'  846 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<char, _Traits>& __in, unsigned char* __s)\n'}
+[2.896501] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.896530] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:846:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.896559] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kunsigned char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.896587] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.896613] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.896639] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.896664] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.896691] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:852:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.896717] (game) StderrLine: {'line': b'  852 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<char, _Traits>& __in, signed char* __s)\n'}
+[2.896742] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.896768] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:852:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.896793] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Ksigned char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.896820] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.896846] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.896873] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iostream:40\x1b[m\x1b[K,\n'}
+[2.896899] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.896925] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:1006:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.896951] (game) StderrLine: {'line': b' 1006 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(_Istream&& __is, _Tp&& __x)\n'}
+[2.896978] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.897004] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:1006:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.897038] (game) StderrLine: {'line': b'/usr/include/c++/11/istream: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = const char (&)[14]]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.897064] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:18:\x1b[m\x1b[K   required from here\n'}
+[2.897091] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/istream:1006:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.897121] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19\x1b[m\x1b[K,\n'}
+[2.897150] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15\x1b[m\x1b[K,\n'}
+[2.897177] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9\x1b[m\x1b[K,\n'}
+[2.897204] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[2.897230] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[2.897256] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.897282] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[2.897310] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.897337] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.897367] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.897393] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.897419] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.897445] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.897472] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.897498] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.897524] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.897550] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4\x1b[m\x1b[K:\n'}
+[2.897576] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:71:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Resetiosflags)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.897605] (game) StderrLine: {'line': b'   71 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)\n'}
+[2.897632] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.897658] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:71:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.897684] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Resetiosflags\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.897715] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.897743] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.897773] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19\x1b[m\x1b[K,\n'}
+[2.897802] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15\x1b[m\x1b[K,\n'}
+[2.897830] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9\x1b[m\x1b[K,\n'}
+[2.897858] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[2.897889] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[2.897917] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.897944] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[2.897970] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.897998] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.898022] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.898048] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.898073] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.898098] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.898123] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.898148] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.898173] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.898199] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4\x1b[m\x1b[K:\n'}
+[2.898224] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:101:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setiosflags)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.898253] (game) StderrLine: {'line': b'  101 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)\n'}
+[2.898278] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.898305] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:101:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.898331] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setiosflags\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.898361] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.898387] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.898412] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19\x1b[m\x1b[K,\n'}
+[2.898437] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15\x1b[m\x1b[K,\n'}
+[2.898463] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9\x1b[m\x1b[K,\n'}
+[2.898487] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[2.898512] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[2.898537] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.898562] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[2.898590] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.898616] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.898640] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.898665] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.898690] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.898715] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.898740] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.898766] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.898791] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.898816] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4\x1b[m\x1b[K:\n'}
+[2.898841] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:132:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setbase)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.898867] (game) StderrLine: {'line': b'  132 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)\n'}
+[2.898892] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.898917] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:132:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.898942] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setbase\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.898973] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.898999] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.899024] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19\x1b[m\x1b[K,\n'}
+[2.899049] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15\x1b[m\x1b[K,\n'}
+[2.899077] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9\x1b[m\x1b[K,\n'}
+[2.899104] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[2.899133] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[2.899159] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.899184] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[2.899209] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.899237] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.899263] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.899289] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.899412] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.899471] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.899526] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.899577] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.899634] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.899805] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4\x1b[m\x1b[K:\n'}
+[2.899861] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:170:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setfill<_CharT>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.899917] (game) StderrLine: {'line': b'  170 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)\n'}
+[2.899971] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.900019] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:170:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.900079] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setfill<_CharT>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.900132] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.900180] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.900230] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19\x1b[m\x1b[K,\n'}
+[2.900280] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15\x1b[m\x1b[K,\n'}
+[2.900337] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9\x1b[m\x1b[K,\n'}
+[2.900390] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[2.900445] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[2.900495] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.900546] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[2.900604] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.900656] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.900706] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.900766] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.900813] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.900862] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.900912] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.900962] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.901010] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.901065] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4\x1b[m\x1b[K:\n'}
+[2.901112] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:200:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setprecision)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.901165] (game) StderrLine: {'line': b'  200 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)\n'}
+[2.901215] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.901264] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:200:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.901327] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setprecision\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.901394] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.901450] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.901503] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19\x1b[m\x1b[K,\n'}
+[2.901557] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15\x1b[m\x1b[K,\n'}
+[2.901607] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9\x1b[m\x1b[K,\n'}
+[2.901659] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[2.901706] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[2.901752] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.901802] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[2.901851] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.901902] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.901952] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.902004] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.902051] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.902103] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.902164] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.902223] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.902277] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.902326] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4\x1b[m\x1b[K:\n'}
+[2.902378] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:230:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setw)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.902508] (game) StderrLine: {'line': b'  230 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)\n'}
+[2.902574] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.902634] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:230:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.902701] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K"Your choice: "\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst char [14]\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Setw\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.902774] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.902831] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.902893] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19\x1b[m\x1b[K,\n'}
+[2.902965] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15\x1b[m\x1b[K,\n'}
+[2.903019] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9\x1b[m\x1b[K,\n'}
+[2.903075] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[2.903133] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[2.903184] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.903236] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[2.903291] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.903343] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.903397] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.903454] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.903524] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.903583] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.903643] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.903699] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.903756] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.903812] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4\x1b[m\x1b[K:\n'}
+[2.903886] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:264:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _MoneyT> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_money<_MoneyT>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.903968] (game) StderrLine: {'line': b'  264 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __is, _Get_money<_MoneyT> __f)\n'}
+[2.904043] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.904128] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:264:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.904450] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::_Get_money<_MoneyT>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.904600] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.904716] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.904812] (game) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19\x1b[m\x1b[K,\n'}
+[2.904896] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15\x1b[m\x1b[K,\n'}
+[2.904967] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9\x1b[m\x1b[K,\n'}
+[2.905032] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[2.905098] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[2.905147] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.905197] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[2.905246] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.905296] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.905347] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.905398] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.905457] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.905513] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.905562] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.905613] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.905662] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.905712] (game) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:4\x1b[m\x1b[K:\n'}
+[2.905760] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:418:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_time<_CharT>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.905811] (game) StderrLine: {'line': b'  418 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K>>(basic_istream<_CharT, _Traits>& __is, _Get_time<_CharT> __f)\n'}
+[2.905867] (game) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.905917] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/iomanip:418:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.905970] (game) StderrLine: {'line': b'\x1b[01m\x1b[K/home/g209/workspace/src/game/src/controller_publisher.cpp:60:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::_Get_time<_CharT>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.906020] (game) StderrLine: {'line': b'   60 |                                         std::cin >> \x1b[01;36m\x1b[K"Your choice: "\x1b[m\x1b[K >> choice;\n'}
+[2.906078] (game) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.928821] (-) TimerEvent: {}
+[3.521585] (game) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1\n'}
+[3.522045] (-) TimerEvent: {}
+[3.522215] (game) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2\n'}
+[3.550782] (game) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Fehler 2\n'}
+[3.555478] (game) CommandEnded: {'returncode': 2}
+[3.622579] (-) TimerEvent: {}
+[3.723254] (-) TimerEvent: {}
+[3.823647] (game) JobEnded: {'identifier': 'game', 'rc': 2}
+[3.826979] (-) TimerEvent: {}
+[3.827916] (-) EventReactorShutdown: {}

@@ -37,15 +37,15 @@ private:
   ::game::msg::GameStateMsg msg_;
 };
 
-class Init_GameStateMsg_dice_result
+class Init_GameStateMsg_player_position
 {
 public:
-  explicit Init_GameStateMsg_dice_result(::game::msg::GameStateMsg & msg)
+  explicit Init_GameStateMsg_player_position(::game::msg::GameStateMsg & msg)
   : msg_(msg)
   {}
-  Init_GameStateMsg_game_message dice_result(::game::msg::GameStateMsg::_dice_result_type arg)
+  Init_GameStateMsg_game_message player_position(::game::msg::GameStateMsg::_player_position_type arg)
   {
-    msg_.dice_result = std::move(arg);
+    msg_.player_position = std::move(arg);
     return Init_GameStateMsg_game_message(msg_);
   }
 
@@ -53,15 +53,31 @@ private:
   ::game::msg::GameStateMsg msg_;
 };
 
-class Init_GameStateMsg_player_position
+class Init_GameStateMsg_dice_result
 {
 public:
-  Init_GameStateMsg_player_position()
+  explicit Init_GameStateMsg_dice_result(::game::msg::GameStateMsg & msg)
+  : msg_(msg)
+  {}
+  Init_GameStateMsg_player_position dice_result(::game::msg::GameStateMsg::_dice_result_type arg)
+  {
+    msg_.dice_result = std::move(arg);
+    return Init_GameStateMsg_player_position(msg_);
+  }
+
+private:
+  ::game::msg::GameStateMsg msg_;
+};
+
+class Init_GameStateMsg_first_player_id
+{
+public:
+  Init_GameStateMsg_first_player_id()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_GameStateMsg_dice_result player_position(::game::msg::GameStateMsg::_player_position_type arg)
+  Init_GameStateMsg_dice_result first_player_id(::game::msg::GameStateMsg::_first_player_id_type arg)
   {
-    msg_.player_position = std::move(arg);
+    msg_.first_player_id = std::move(arg);
     return Init_GameStateMsg_dice_result(msg_);
   }
 
@@ -80,7 +96,7 @@ template<>
 inline
 auto build<::game::msg::GameStateMsg>()
 {
-  return game::msg::builder::Init_GameStateMsg_player_position();
+  return game::msg::builder::Init_GameStateMsg_first_player_id();
 }
 
 }  // namespace game

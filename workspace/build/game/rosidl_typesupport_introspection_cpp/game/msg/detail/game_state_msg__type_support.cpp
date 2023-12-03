@@ -37,16 +37,16 @@ void GameStateMsg_fini_function(void * message_memory)
   typed_message->~GameStateMsg();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember GameStateMsg_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember GameStateMsg_message_member_array[4] = {
   {
-    "player_position",  // name
+    "first_player_id",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(game::msg::GameStateMsg, player_position),  // bytes offset in struct
+    offsetof(game::msg::GameStateMsg, first_player_id),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -64,6 +64,23 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember GameStateMsg_
     0,  // array size
     false,  // is upper bound
     offsetof(game::msg::GameStateMsg, dice_result),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "player_position",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(game::msg::GameStateMsg, player_position),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -94,7 +111,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember GameStateMsg_
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers GameStateMsg_message_members = {
   "game::msg",  // message namespace
   "GameStateMsg",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(game::msg::GameStateMsg),
   GameStateMsg_message_member_array,  // message members
   GameStateMsg_init_function,  // function to initialize message memory (memory has to be allocated)

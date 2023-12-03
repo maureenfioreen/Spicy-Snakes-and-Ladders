@@ -1,0 +1,9 @@
+[0.067s] Invoking command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders': /usr/bin/cmake --build /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders -- -j2 -l2
+[0.092s] [31mCMake Error at CMakeLists.txt:8 (rosidl_generate_interfaces):
+[0.093s]   Unknown CMake command "rosidl_generate_interfaces".
+[0.093s] 
+[0.093s] [0m
+[0.093s] -- Configuring incomplete, errors occurred!
+[0.093s] See also "/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/CMakeOutput.log".
+[0.118s] gmake: *** [Makefile:226: cmake_check_build_system] Fehler 1
+[0.130s] Invoked command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders' returned '2': /usr/bin/cmake --build /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders -- -j2 -l2

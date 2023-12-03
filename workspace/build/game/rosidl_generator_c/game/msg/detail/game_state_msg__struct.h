@@ -24,8 +24,9 @@ extern "C"
 /// Struct defined in msg/GameStateMsg in the package game.
 typedef struct game__msg__GameStateMsg
 {
-  int32_t player_position;
+  int32_t first_player_id;
   int32_t dice_result;
+  int32_t player_position;
   rosidl_runtime_c__String game_message;
 } game__msg__GameStateMsg;
 

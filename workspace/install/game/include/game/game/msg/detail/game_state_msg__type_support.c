@@ -35,16 +35,16 @@ void game__msg__GameStateMsg__rosidl_typesupport_introspection_c__GameStateMsg_f
   game__msg__GameStateMsg__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember game__msg__GameStateMsg__rosidl_typesupport_introspection_c__GameStateMsg_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember game__msg__GameStateMsg__rosidl_typesupport_introspection_c__GameStateMsg_message_member_array[4] = {
   {
-    "player_position",  // name
+    "first_player_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(game__msg__GameStateMsg, player_position),  // bytes offset in struct
+    offsetof(game__msg__GameStateMsg, first_player_id),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -62,6 +62,23 @@ static rosidl_typesupport_introspection_c__MessageMember game__msg__GameStateMsg
     0,  // array size
     false,  // is upper bound
     offsetof(game__msg__GameStateMsg, dice_result),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "player_position",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(game__msg__GameStateMsg, player_position),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -92,7 +109,7 @@ static rosidl_typesupport_introspection_c__MessageMember game__msg__GameStateMsg
 static const rosidl_typesupport_introspection_c__MessageMembers game__msg__GameStateMsg__rosidl_typesupport_introspection_c__GameStateMsg_message_members = {
   "game__msg",  // message namespace
   "GameStateMsg",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(game__msg__GameStateMsg),
   game__msg__GameStateMsg__rosidl_typesupport_introspection_c__GameStateMsg_message_member_array,  // message members
   game__msg__GameStateMsg__rosidl_typesupport_introspection_c__GameStateMsg_init_function,  // function to initialize message memory (memory has to be allocated)

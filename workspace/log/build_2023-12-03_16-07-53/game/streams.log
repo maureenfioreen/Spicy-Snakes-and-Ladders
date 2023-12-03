@@ -1,0 +1,51 @@
+[0.081s] Invoking command in '/home/g209/workspace/build/game': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g209/workspace/build/game -- -j2 -l2
+[0.176s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_generator_c[0m
+[0.200s] [  3%] Built target game__cpp
+[0.222s] [ 12%] Built target game__rosidl_generator_c
+[0.244s] [ 12%] Built target ament_cmake_python_copy_game
+[0.273s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_cpp[0m
+[0.290s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_fastrtps_cpp[0m
+[0.308s] [ 21%] Built target game__rosidl_typesupport_cpp
+[0.309s] [ 30%] Built target game__rosidl_typesupport_fastrtps_cpp
+[0.327s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_introspection_cpp[0m
+[0.429s] [ 39%] Built target game__rosidl_typesupport_introspection_cpp
+[0.475s] [35m[1mConsolidate compiler generated dependencies of target controller_publisher[0m
+[0.513s] [ 42%] [32mBuilding CXX object CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o[0m
+[0.665s] running egg_info
+[1.237s] writing game.egg-info/PKG-INFO
+[1.237s] writing dependency_links to game.egg-info/dependency_links.txt
+[1.237s] writing top-level names to game.egg-info/top_level.txt
+[1.237s] reading manifest file 'game.egg-info/SOURCES.txt'
+[1.237s] writing manifest file 'game.egg-info/SOURCES.txt'
+[1.461s] [ 42%] Built target ament_cmake_python_build_game_egg
+[1.461s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_fastrtps_c[0m
+[1.461s] [ 51%] Built target game__rosidl_typesupport_fastrtps_c
+[1.461s] [ 54%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.795s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_introspection_c[0m
+[2.655s] [ 57%] [32mBuilding C object CMakeFiles/game__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/game/msg/detail/game_state_msg__type_support.c.o[0m
+[3.010s] [ 60%] [32m[1mLinking C shared library libgame__rosidl_typesupport_introspection_c.so[0m
+[3.182s] [ 60%] Built target game__rosidl_typesupport_introspection_c
+[3.508s] [ 63%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.802s] [01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:[m[K In member function ‘[01m[Kvoid ControllerPublisher::handlePlayerMove()[m[K’:
+[3.802s] [01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:27:52:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kroll[m[K’
+[3.802s]    27 |                                         int second [01;31m[Kroll[m[K = rollDice();
+[3.802s]       |                                                    [01;31m[K^~~~[m[K
+[3.849s] [01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:28:58:[m[K [01;31m[Kerror: [m[K‘[01m[Ksecond_roll[m[K’ was not declared in this scope
+[3.849s]    28 |                                         if (first_roll > [01;31m[Ksecond_roll[m[K) {
+[3.849s]       |                                                          [01;31m[K^~~~~~~~~~~[m[K
+[4.055s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_typesupport_c[0m
+[4.101s] [ 66%] [32mBuilding CXX object CMakeFiles/game__rosidl_typesupport_c.dir/rosidl_typesupport_c/game/msg/game_state_msg__type_support.cpp.o[0m
+[4.152s] [ 69%] [32m[1mLinking CXX shared library libgame__rosidl_typesupport_c.so[0m
+[4.221s] [ 69%] Built target game__rosidl_typesupport_c
+[4.254s] [ 69%] Built target game
+[4.298s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.817s] [ 72%] Built target game__py
+[4.869s] gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1
+[4.869s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2
+[4.869s] gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+[4.893s] [35m[1mConsolidate compiler generated dependencies of target game__rosidl_generator_py[0m
+[4.915s] [ 75%] [32mBuilding C object CMakeFiles/game__rosidl_generator_py.dir/rosidl_generator_py/game/msg/_game_state_msg_s.c.o[0m
+[5.212s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/game/libgame__rosidl_generator_py.so[0m
+[5.345s] [ 78%] Built target game__rosidl_generator_py
+[5.349s] gmake: *** [Makefile:146: all] Fehler 2
+[5.350s] Invoked command in '/home/g209/workspace/build/game' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/g209/workspace/build/game -- -j2 -l2

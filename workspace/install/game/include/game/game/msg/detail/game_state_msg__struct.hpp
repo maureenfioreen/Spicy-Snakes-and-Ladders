@@ -38,8 +38,9 @@ struct GameStateMsg_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->player_position = 0l;
+      this->first_player_id = 0l;
       this->dice_result = 0l;
+      this->player_position = 0l;
       this->game_message = "";
     }
   }
@@ -50,34 +51,44 @@ struct GameStateMsg_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->player_position = 0l;
+      this->first_player_id = 0l;
       this->dice_result = 0l;
+      this->player_position = 0l;
       this->game_message = "";
     }
   }
 
   // field types and members
-  using _player_position_type =
+  using _first_player_id_type =
     int32_t;
-  _player_position_type player_position;
+  _first_player_id_type first_player_id;
   using _dice_result_type =
     int32_t;
   _dice_result_type dice_result;
+  using _player_position_type =
+    int32_t;
+  _player_position_type player_position;
   using _game_message_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _game_message_type game_message;
 
   // setters for named parameter idiom
-  Type & set__player_position(
+  Type & set__first_player_id(
     const int32_t & _arg)
   {
-    this->player_position = _arg;
+    this->first_player_id = _arg;
     return *this;
   }
   Type & set__dice_result(
     const int32_t & _arg)
   {
     this->dice_result = _arg;
+    return *this;
+  }
+  Type & set__player_position(
+    const int32_t & _arg)
+  {
+    this->player_position = _arg;
     return *this;
   }
   Type & set__game_message(
@@ -129,10 +140,13 @@ struct GameStateMsg_
   // comparison operators
   bool operator==(const GameStateMsg_ & other) const
   {
-    if (this->player_position != other.player_position) {
+    if (this->first_player_id != other.first_player_id) {
       return false;
     }
     if (this->dice_result != other.dice_result) {
+      return false;
+    }
+    if (this->player_position != other.player_position) {
       return false;
     }
     if (this->game_message != other.game_message) {

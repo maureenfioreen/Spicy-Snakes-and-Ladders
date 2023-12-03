@@ -25,10 +25,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: player_position
+  // member: first_player_id
   {
-    out << "player_position: ";
-    rosidl_generator_traits::value_to_yaml(msg.player_position, out);
+    out << "first_player_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.first_player_id, out);
     out << ", ";
   }
 
@@ -36,6 +36,13 @@ inline void to_flow_style_yaml(
   {
     out << "dice_result: ";
     rosidl_generator_traits::value_to_yaml(msg.dice_result, out);
+    out << ", ";
+  }
+
+  // member: player_position
+  {
+    out << "player_position: ";
+    rosidl_generator_traits::value_to_yaml(msg.player_position, out);
     out << ", ";
   }
 
@@ -51,13 +58,13 @@ inline void to_block_style_yaml(
   const GameStateMsg & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: player_position
+  // member: first_player_id
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "player_position: ";
-    rosidl_generator_traits::value_to_yaml(msg.player_position, out);
+    out << "first_player_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.first_player_id, out);
     out << "\n";
   }
 
@@ -68,6 +75,16 @@ inline void to_block_style_yaml(
     }
     out << "dice_result: ";
     rosidl_generator_traits::value_to_yaml(msg.dice_result, out);
+    out << "\n";
+  }
+
+  // member: player_position
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "player_position: ";
+    rosidl_generator_traits::value_to_yaml(msg.player_position, out);
     out << "\n";
   }
 

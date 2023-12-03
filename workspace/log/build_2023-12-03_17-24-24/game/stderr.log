@@ -1,0 +1,10 @@
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:[m[K In constructor ‘[01m[KControllerPublisher::ControllerPublisher()[m[K’:
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:14:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kplayer_move_subscription_[m[K’ was not declared in this scope
+   14 |                         [01;31m[Kplayer_move_subscription_[m[K = this->create_subscription<game::msg::GameStateMsg>("player_info", 10, std::bind(&GUIPublisher::handlePlayerMove, this, _1));
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:14:134:[m[K [01;31m[Kerror: [m[K‘[01m[KGUIPublisher[m[K’ has not been declared
+   14 |                         player_move_subscription_ = this->create_subscription<game::msg::GameStateMsg>("player_info", 10, std::bind(&[01;31m[KGUIPublisher[m[K::handlePlayerMove, this, _1));
+      |                                                                                                                                      [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2
+gmake: *** [Makefile:146: all] Fehler 2

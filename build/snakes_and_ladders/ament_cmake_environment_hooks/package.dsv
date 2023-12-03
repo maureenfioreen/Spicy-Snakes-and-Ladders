@@ -1,0 +1,4 @@
+source;share/snakes_and_ladders/local_setup.bash
+source;share/snakes_and_ladders/local_setup.dsv
+source;share/snakes_and_ladders/local_setup.sh
+source;share/snakes_and_ladders/local_setup.zsh

@@ -1,0 +1,20 @@
+[0.062s] Invoking command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders': /usr/bin/cmake --build /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders -- -j2 -l2
+[0.092s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.217s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.219s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.222s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.246s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.274s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.322s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.324s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.414s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.572s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:59 (message):
+[0.573s]   rosidl_generate_interfaces() called without any interface files
+[0.573s] Call Stack (most recent call first):
+[0.575s]   CMakeLists.txt:19 (rosidl_generate_interfaces)
+[0.576s] 
+[0.576s] [0m
+[0.577s] -- Configuring incomplete, errors occurred!
+[0.578s] See also "/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/CMakeOutput.log".
+[0.587s] gmake: *** [Makefile:226: cmake_check_build_system] Fehler 1
+[0.588s] Invoked command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders' returned '2': /usr/bin/cmake --build /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders -- -j2 -l2

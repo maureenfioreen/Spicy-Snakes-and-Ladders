@@ -1,0 +1,15 @@
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/ament_index/resource_index/package_run_dependencies/snakes_and_ladders
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/ament_index/resource_index/parent_prefix_path/snakes_and_ladders
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/environment/ament_prefix_path.sh
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/environment/ament_prefix_path.dsv
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/environment/path.sh
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/environment/path.dsv
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/local_setup.bash
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/local_setup.sh
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/local_setup.zsh
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/local_setup.dsv
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/package.dsv
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/ament_index/resource_index/packages/snakes_and_ladders
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/cmake/snakes_and_laddersConfig.cmake
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/cmake/snakes_and_laddersConfig-version.cmake
+/home/g209/Spicy-Snakes-and-Ladders/install/snakes_and_ladders/share/snakes_and_ladders/package.xml

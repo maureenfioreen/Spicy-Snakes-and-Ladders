@@ -1,3 +1,4 @@
-int32 player_position
+int32 first_player_id
 int32 dice_result
+int32 player_position
 string game_message

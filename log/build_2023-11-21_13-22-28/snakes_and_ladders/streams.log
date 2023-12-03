@@ -1,0 +1,18 @@
+[0.068s] Invoking command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders': /usr/bin/cmake --build /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders -- -j2 -l2
+[0.088s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.238s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.246s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.258s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.318s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.382s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[0.382s]   find_package called with invalid argument "cpp"
+[0.382s] 
+[0.382s] [0m
+[0.383s] [31mCMake Error at CMakeLists.txt:16 (ament_target_depedencies):
+[0.383s]   Unknown CMake command "ament_target_depedencies".
+[0.383s] 
+[0.383s] [0m
+[0.383s] -- Configuring incomplete, errors occurred!
+[0.383s] See also "/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/CMakeOutput.log".
+[0.386s] gmake: *** [Makefile:226: cmake_check_build_system] Fehler 1
+[0.388s] Invoked command in '/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders' returned '2': /usr/bin/cmake --build /home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders -- -j2 -l2

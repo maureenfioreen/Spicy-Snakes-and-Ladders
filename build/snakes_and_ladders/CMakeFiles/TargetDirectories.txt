@@ -1,0 +1,9 @@
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/uninstall.dir
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/snakes_and_ladders_uninstall.dir
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/test.dir
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/edit_cache.dir
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/rebuild_cache.dir
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/list_install_components.dir
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/install.dir
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/install/local.dir
+/home/g209/Spicy-Snakes-and-Ladders/build/snakes_and_ladders/CMakeFiles/install/strip.dir

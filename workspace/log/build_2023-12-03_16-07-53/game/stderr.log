@@ -1,0 +1,11 @@
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:[m[K In member function ‘[01m[Kvoid ControllerPublisher::handlePlayerMove()[m[K’:
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:27:52:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kroll[m[K’
+   27 |                                         int second [01;31m[Kroll[m[K = rollDice();
+      |                                                    [01;31m[K^~~~[m[K
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:28:58:[m[K [01;31m[Kerror: [m[K‘[01m[Ksecond_roll[m[K’ was not declared in this scope
+   28 |                                         if (first_roll > [01;31m[Ksecond_roll[m[K) {
+      |                                                          [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2
+gmake[1]: *** Auf noch nicht beendete Prozesse wird gewartet …
+gmake: *** [Makefile:146: all] Fehler 2

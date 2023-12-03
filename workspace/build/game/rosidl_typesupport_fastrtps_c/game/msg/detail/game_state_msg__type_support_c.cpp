@@ -51,14 +51,19 @@ static bool _GameStateMsg__cdr_serialize(
     return false;
   }
   const _GameStateMsg__ros_msg_type * ros_message = static_cast<const _GameStateMsg__ros_msg_type *>(untyped_ros_message);
-  // Field name: player_position
+  // Field name: first_player_id
   {
-    cdr << ros_message->player_position;
+    cdr << ros_message->first_player_id;
   }
 
   // Field name: dice_result
   {
     cdr << ros_message->dice_result;
+  }
+
+  // Field name: player_position
+  {
+    cdr << ros_message->player_position;
   }
 
   // Field name: game_message
@@ -87,14 +92,19 @@ static bool _GameStateMsg__cdr_deserialize(
     return false;
   }
   _GameStateMsg__ros_msg_type * ros_message = static_cast<_GameStateMsg__ros_msg_type *>(untyped_ros_message);
-  // Field name: player_position
+  // Field name: first_player_id
   {
-    cdr >> ros_message->player_position;
+    cdr >> ros_message->first_player_id;
   }
 
   // Field name: dice_result
   {
     cdr >> ros_message->dice_result;
+  }
+
+  // Field name: player_position
+  {
+    cdr >> ros_message->player_position;
   }
 
   // Field name: game_message
@@ -130,15 +140,21 @@ size_t get_serialized_size_game__msg__GameStateMsg(
   (void)padding;
   (void)wchar_size;
 
-  // field.name player_position
+  // field.name first_player_id
   {
-    size_t item_size = sizeof(ros_message->player_position);
+    size_t item_size = sizeof(ros_message->first_player_id);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // field.name dice_result
   {
     size_t item_size = sizeof(ros_message->dice_result);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name player_position
+  {
+    size_t item_size = sizeof(ros_message->player_position);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -173,7 +189,7 @@ size_t max_serialized_size_game__msg__GameStateMsg(
   full_bounded = true;
   is_plain = true;
 
-  // member: player_position
+  // member: first_player_id
   {
     size_t array_size = 1;
 
@@ -181,6 +197,13 @@ size_t max_serialized_size_game__msg__GameStateMsg(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: dice_result
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: player_position
   {
     size_t array_size = 1;
 

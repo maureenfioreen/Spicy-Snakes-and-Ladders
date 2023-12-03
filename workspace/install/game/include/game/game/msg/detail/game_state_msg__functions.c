@@ -21,8 +21,9 @@ game__msg__GameStateMsg__init(game__msg__GameStateMsg * msg)
   if (!msg) {
     return false;
   }
-  // player_position
+  // first_player_id
   // dice_result
+  // player_position
   // game_message
   if (!rosidl_runtime_c__String__init(&msg->game_message)) {
     game__msg__GameStateMsg__fini(msg);
@@ -37,8 +38,9 @@ game__msg__GameStateMsg__fini(game__msg__GameStateMsg * msg)
   if (!msg) {
     return;
   }
-  // player_position
+  // first_player_id
   // dice_result
+  // player_position
   // game_message
   rosidl_runtime_c__String__fini(&msg->game_message);
 }
@@ -49,12 +51,16 @@ game__msg__GameStateMsg__are_equal(const game__msg__GameStateMsg * lhs, const ga
   if (!lhs || !rhs) {
     return false;
   }
-  // player_position
-  if (lhs->player_position != rhs->player_position) {
+  // first_player_id
+  if (lhs->first_player_id != rhs->first_player_id) {
     return false;
   }
   // dice_result
   if (lhs->dice_result != rhs->dice_result) {
+    return false;
+  }
+  // player_position
+  if (lhs->player_position != rhs->player_position) {
     return false;
   }
   // game_message
@@ -74,10 +80,12 @@ game__msg__GameStateMsg__copy(
   if (!input || !output) {
     return false;
   }
-  // player_position
-  output->player_position = input->player_position;
+  // first_player_id
+  output->first_player_id = input->first_player_id;
   // dice_result
   output->dice_result = input->dice_result;
+  // player_position
+  output->player_position = input->player_position;
   // game_message
   if (!rosidl_runtime_c__String__copy(
       &(input->game_message), &(output->game_message)))
