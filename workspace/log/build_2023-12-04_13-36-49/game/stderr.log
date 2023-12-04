@@ -1,0 +1,13 @@
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:[m[K In member function ‘[01m[Kvoid ControllerPublisher::handlePlayerMove(game::msg::GameStateMsg_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:61:37:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kgame::msg::GameStateMsg[m[K’ {aka ‘[01m[Kgame::msg::GameStateMsg_<std::allocator<void> >[m[K’}
+   61 |                         player_state[01;31m[K->[m[Kfirst_player_id = game_state_msg->first_player_id;
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:62:37:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kgame::msg::GameStateMsg[m[K’ {aka ‘[01m[Kgame::msg::GameStateMsg_<std::allocator<void> >[m[K’}
+   62 |                         player_state[01;31m[K->[m[Kdice_result = game_state_msg->dice_result;
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/g209/workspace/src/game/src/controller_publisher.cpp:63:37:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kgame::msg::GameStateMsg[m[K’ {aka ‘[01m[Kgame::msg::GameStateMsg_<std::allocator<void> >[m[K’}
+   63 |                         player_state[01;31m[K->[m[Kgame_message = game_state_msg->game_message;
+      |                                     [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/controller_publisher.dir/build.make:76: CMakeFiles/controller_publisher.dir/src/controller_publisher.cpp.o] Fehler 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/controller_publisher.dir/all] Fehler 2
+gmake: *** [Makefile:146: all] Fehler 2
